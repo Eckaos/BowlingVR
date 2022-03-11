@@ -2,44 +2,63 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class TurnManager : MonoBehaviour
 {
     private List<Player> players;
-    public Player player;
+    private Player player;
     private int fallenKegels = 0;
-    private int throws = 1;
-
+    private int throws = 0;
     private int playerIndex = 0;
-
-    public void Turn(int kegels){
-        this.fallenKegels += kegels; 
+    public Text specialResult;
+    private void Start() {
+        players = GameObject.FindGameObjectsWithTag("Player").Select(gameObject => gameObject.GetComponent<Player>()).ToList();
+        player = players[playerIndex];
+    }
+    public void Score(int kegels)
+    {
+        if(kegels == fallenKegels) return;
+        this.fallenKegels += kegels;
         Scoring(kegels);
-        EndTurn();
+        throws++;
+        if(throws >= 2) NextTurn();
+    }
+
+    private void Update() {
+        StartCoroutine(DisplaySpecialResult());
     }
 
     void Scoring(int kegels){
         player.score.Add(player.scoreCalculator.CalculateTurn(kegels));
-    }
-
-    void EndTurn(){
-        if(throws < 2 && fallenKegels < 10) throws++;
-        else InitNextTurn();
-    }
-
-    void InitNextTurn(){
-        if(isStrike())
+        if(IsStrike())
             player.scoreCalculator.doubleScoreCount += 2;
-        if(isSpare())
+        if(IsSpare())
             player.scoreCalculator.doubleScoreCount++;
-        throws = 1;
-        fallenKegels = 0;
     }
 
-    bool isStrike(){
-        return fallenKegels == 10 && throws == 1;
+    void NextTurn(){
+        throws = 0;
+        fallenKegels = 0;
+        playerIndex++;
+        if(playerIndex >= players.Count) playerIndex = 0;
+        player = players[playerIndex];
     }
-    bool isSpare(){
-        return fallenKegels == 10 && throws == 2;
+    bool IsStrike() => fallenKegels == 10 && throws == 1;
+    bool IsSpare() => fallenKegels == 10 && throws == 2;
+    bool IsGutter() => fallenKegels == 0 && throws > 0;
+
+    public IEnumerator DisplaySpecialResult()
+    {
+        if(IsStrike())
+            specialResult.text = "Strike";
+        else if(IsSpare())
+            specialResult.text = "Spare";
+        else if(IsGutter())
+            specialResult.text = "Gutter";
+        else
+            specialResult.text = "";
+        
+        yield return new WaitForSeconds(2);
     }
 }

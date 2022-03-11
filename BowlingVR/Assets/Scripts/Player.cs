@@ -11,13 +11,6 @@ public class Player : MonoBehaviour
         score = new List<int>();
         scoreCalculator = new BowlingScoreCalculator();
     }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
     public int GetTotalScore(){
         return score.Sum();
     }
