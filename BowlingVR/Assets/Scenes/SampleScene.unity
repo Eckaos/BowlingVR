@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.780508, g: 0.7805183, b: 0.7804933, a: 1}
+  m_IndirectSpecularColor: {r: 0.7805085, g: 0.78051883, b: 0.780494, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1215,7 +1215,7 @@ GameObject:
   - component: {fileID: 704035808}
   m_Layer: 0
   m_Name: XR Origin
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1721,6 +1721,18 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5301010687286618209, guid: ac1af96fd5e0f4f9e97339b652aa389b, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 704035807}
+    - target: {fileID: 5301010687286618209, guid: ac1af96fd5e0f4f9e97339b652aa389b, type: 3}
+      propertyPath: turnManager
+      value: 
+      objectReference: {fileID: 1130547250}
+    - target: {fileID: 5301010687286618209, guid: ac1af96fd5e0f4f9e97339b652aa389b, type: 3}
+      propertyPath: kegelsManager
+      value: 
+      objectReference: {fileID: 1987797645481351145}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ac1af96fd5e0f4f9e97339b652aa389b, type: 3}
 --- !u!1 &1290723488 stripped
@@ -1872,21 +1884,6 @@ MonoBehaviour:
   m_ForceGravityOnDetach: 0
   m_RetainTransformParent: 1
   m_AttachPointCompatibilityMode: 0
---- !u!114 &1290723492
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1290723488}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d4dc1591c3617ee4c9b4879d002e268d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player: {fileID: 704035807}
-  turnManager: {fileID: 0}
-  kegelsManager: {fileID: 1987797645481351145}
 --- !u!1001 &1334800588
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2295,24 +2292,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1837630555}
   m_CullTransparentMesh: 1
---- !u!1 &1897923734 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1987797644861143726, guid: 41f142eadb554334a8719eb975b322b1, type: 3}
-  m_PrefabInstance: {fileID: 1987797645481351144}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1897923735
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1897923734}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 800e211bedbff004b83f3fffae83074f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  kegels: []
 --- !u!1 &2038392729
 GameObject:
   m_ObjectHideFlags: 0
@@ -3007,7 +2986,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 7384639856384703340, guid: 41f142eadb554334a8719eb975b322b1, type: 3}
   m_PrefabInstance: {fileID: 1987797645481351144}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1897923734}
+  m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 800e211bedbff004b83f3fffae83074f, type: 3}
