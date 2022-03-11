@@ -173,6 +173,7 @@ GameObject:
   - component: {fileID: 1987797644709520314}
   - component: {fileID: 1987797644709520316}
   - component: {fileID: 1987797644709520315}
+  - component: {fileID: 61240564893655903}
   m_Layer: 0
   m_Name: Kegel (1)
   m_TagString: Untagged
@@ -225,6 +226,18 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 4300002, guid: 6a14dc0db365944f182482aba11ad830, type: 3}
+--- !u!114 &61240564893655903
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1987797644709520313}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b7e8476bf943b1048a4d7b0bf9635f0a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1987797644830510351
 GameObject:
   m_ObjectHideFlags: 0
@@ -315,6 +328,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1987797644861143727}
+  - component: {fileID: 7384639856384703340}
   m_Layer: 0
   m_Name: Quilles
   m_TagString: Untagged
@@ -346,6 +360,29 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7384639856384703340
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1987797644861143726}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 800e211bedbff004b83f3fffae83074f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  kegels:
+  - {fileID: 8109059000148093271}
+  - {fileID: 61240564893655903}
+  - {fileID: 6942336328142075376}
+  - {fileID: 6713336795511668515}
+  - {fileID: 7878132201633528952}
+  - {fileID: 7848711846504233978}
+  - {fileID: 497131188765390934}
+  - {fileID: 6691130509753334439}
+  - {fileID: 396952504400778773}
+  - {fileID: 3301689344777684672}
 --- !u!1 &1987797644913799612
 GameObject:
   m_ObjectHideFlags: 0
@@ -438,6 +475,7 @@ GameObject:
   - component: {fileID: 1987797645143897381}
   - component: {fileID: 1987797645143897383}
   - component: {fileID: 1987797645143897382}
+  - component: {fileID: 6942336328142075376}
   m_Layer: 0
   m_Name: Kegel (2)
   m_TagString: Untagged
@@ -490,6 +528,18 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 4300002, guid: 6a14dc0db365944f182482aba11ad830, type: 3}
+--- !u!114 &6942336328142075376
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1987797645143897380}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b7e8476bf943b1048a4d7b0bf9635f0a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1987797645241585950
 GameObject:
   m_ObjectHideFlags: 0
@@ -501,6 +551,7 @@ GameObject:
   - component: {fileID: 1987797645241585951}
   - component: {fileID: 1987797645241585937}
   - component: {fileID: 1987797645241585936}
+  - component: {fileID: 7878132201633528952}
   m_Layer: 0
   m_Name: Kegel (4)
   m_TagString: Untagged
@@ -553,6 +604,18 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 4300002, guid: 6a14dc0db365944f182482aba11ad830, type: 3}
+--- !u!114 &7878132201633528952
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1987797645241585950}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b7e8476bf943b1048a4d7b0bf9635f0a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1987797645264739816
 GameObject:
   m_ObjectHideFlags: 0
@@ -807,6 +870,7 @@ GameObject:
   - component: {fileID: 1987797645614144117}
   - component: {fileID: 1987797645614144119}
   - component: {fileID: 1987797645614144118}
+  - component: {fileID: 6691130509753334439}
   m_Layer: 0
   m_Name: Kegel (7)
   m_TagString: Untagged
@@ -859,6 +923,18 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 4300002, guid: 6a14dc0db365944f182482aba11ad830, type: 3}
+--- !u!114 &6691130509753334439
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1987797645614144116}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b7e8476bf943b1048a4d7b0bf9635f0a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1987797645639749973
 GameObject:
   m_ObjectHideFlags: 0
@@ -870,6 +946,7 @@ GameObject:
   - component: {fileID: 1987797645639749974}
   - component: {fileID: 1987797645639749928}
   - component: {fileID: 1987797645639749975}
+  - component: {fileID: 497131188765390934}
   m_Layer: 0
   m_Name: Kegel (6)
   m_TagString: Untagged
@@ -922,6 +999,18 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 4300002, guid: 6a14dc0db365944f182482aba11ad830, type: 3}
+--- !u!114 &497131188765390934
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1987797645639749973}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b7e8476bf943b1048a4d7b0bf9635f0a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1987797645651899205
 GameObject:
   m_ObjectHideFlags: 0
@@ -1014,6 +1103,7 @@ GameObject:
   - component: {fileID: 1987797645655105541}
   - component: {fileID: 1987797645655105543}
   - component: {fileID: 1987797645655105542}
+  - component: {fileID: 3301689344777684672}
   m_Layer: 0
   m_Name: Kegel (9)
   m_TagString: Untagged
@@ -1066,6 +1156,18 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 4300002, guid: 6a14dc0db365944f182482aba11ad830, type: 3}
+--- !u!114 &3301689344777684672
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1987797645655105540}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b7e8476bf943b1048a4d7b0bf9635f0a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1987797646068583163
 GameObject:
   m_ObjectHideFlags: 0
@@ -1077,6 +1179,7 @@ GameObject:
   - component: {fileID: 1987797646068583164}
   - component: {fileID: 1987797646068583166}
   - component: {fileID: 1987797646068583165}
+  - component: {fileID: 6713336795511668515}
   m_Layer: 0
   m_Name: Kegel (3)
   m_TagString: Untagged
@@ -1129,6 +1232,18 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 4300002, guid: 6a14dc0db365944f182482aba11ad830, type: 3}
+--- !u!114 &6713336795511668515
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1987797646068583163}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b7e8476bf943b1048a4d7b0bf9635f0a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1987797646285778781
 GameObject:
   m_ObjectHideFlags: 0
@@ -1140,6 +1255,7 @@ GameObject:
   - component: {fileID: 1987797646285778782}
   - component: {fileID: 1987797646285778768}
   - component: {fileID: 1987797646285778783}
+  - component: {fileID: 396952504400778773}
   m_Layer: 0
   m_Name: Kegel (8)
   m_TagString: Untagged
@@ -1192,6 +1308,18 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 4300002, guid: 6a14dc0db365944f182482aba11ad830, type: 3}
+--- !u!114 &396952504400778773
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1987797646285778781}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b7e8476bf943b1048a4d7b0bf9635f0a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1987797646340235590
 GameObject:
   m_ObjectHideFlags: 0
@@ -1203,6 +1331,7 @@ GameObject:
   - component: {fileID: 1987797646340235589}
   - component: {fileID: 1987797646340235591}
   - component: {fileID: 1987797646340235608}
+  - component: {fileID: 8109059000148093271}
   m_Layer: 0
   m_Name: Kegel
   m_TagString: Untagged
@@ -1255,6 +1384,18 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 4300002, guid: 6a14dc0db365944f182482aba11ad830, type: 3}
+--- !u!114 &8109059000148093271
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1987797646340235590}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b7e8476bf943b1048a4d7b0bf9635f0a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1987797646365366795
 GameObject:
   m_ObjectHideFlags: 0
@@ -1266,6 +1407,7 @@ GameObject:
   - component: {fileID: 1987797646365366796}
   - component: {fileID: 1987797646365366798}
   - component: {fileID: 1987797646365366797}
+  - component: {fileID: 71596244513620297}
   m_Layer: 0
   m_Name: Kegel
   m_TagString: Untagged
@@ -1336,6 +1478,18 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &71596244513620297
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1987797646365366795}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b7e8476bf943b1048a4d7b0bf9635f0a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1987797646460595700
 GameObject:
   m_ObjectHideFlags: 0
@@ -1428,6 +1582,7 @@ GameObject:
   - component: {fileID: 1987797646518897799}
   - component: {fileID: 1987797646518897817}
   - component: {fileID: 1987797646518897816}
+  - component: {fileID: 7848711846504233978}
   m_Layer: 0
   m_Name: Kegel (5)
   m_TagString: Untagged
@@ -1480,3 +1635,15 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 4300002, guid: 6a14dc0db365944f182482aba11ad830, type: 3}
+--- !u!114 &7848711846504233978
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1987797646518897798}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b7e8476bf943b1048a4d7b0bf9635f0a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
