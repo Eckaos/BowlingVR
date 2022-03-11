@@ -1,20 +1,20 @@
 m_ProjectFiles:
   m_ManifestFileStatus:
-    m_FilePath: C:/Users/basti/BowlingVR/BowlingVR/Packages/manifest.json
+    m_FilePath: D:/GitHub/BowlingVR/BowlingVR/Packages/manifest.json
     m_PathExists: 1
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 637825620799724200
-    m_Hash: 3628106608
+      ticks: 637826134748745896
+    m_Hash: 3122569328
   m_LockFileStatus:
-    m_FilePath: C:/Users/basti/BowlingVR/BowlingVR/Packages/packages-lock.json
+    m_FilePath: D:/GitHub/BowlingVR/BowlingVR/Packages/packages-lock.json
     m_PathExists: 1
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 637825620799964229
-    m_Hash: 2704205074
+      ticks: 637826134748785749
+    m_Hash: 2955933559
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
 m_PackageAssets:
@@ -25,7 +25,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 1.15.7
       source: 1
-      resolvedPath: C:\Users\basti\BowlingVR\BowlingVR\Library\PackageCache\com.unity.collab-proxy@1.15.7
+      resolvedPath: D:\GitHub\BowlingVR\BowlingVR\Library\PackageCache\com.unity.collab-proxy@1.15.7
       assetPath: Packages/com.unity.collab-proxy
       name: com.unity.collab-proxy
       displayName: Version Control
@@ -159,7 +159,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 2.0.7
       source: 1
-      resolvedPath: C:\Users\basti\BowlingVR\BowlingVR\Library\PackageCache\com.unity.ide.rider@2.0.7
+      resolvedPath: D:\GitHub\BowlingVR\BowlingVR\Library\PackageCache\com.unity.ide.rider@2.0.7
       assetPath: Packages/com.unity.ide.rider
       name: com.unity.ide.rider
       displayName: JetBrains Rider Editor
@@ -272,7 +272,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 2.0.12
       source: 1
-      resolvedPath: C:\Users\basti\BowlingVR\BowlingVR\Library\PackageCache\com.unity.ide.visualstudio@2.0.12
+      resolvedPath: D:\GitHub\BowlingVR\BowlingVR\Library\PackageCache\com.unity.ide.visualstudio@2.0.12
       assetPath: Packages/com.unity.ide.visualstudio
       name: com.unity.ide.visualstudio
       displayName: Visual Studio Editor
@@ -363,7 +363,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 1.2.4
       source: 1
-      resolvedPath: C:\Users\basti\BowlingVR\BowlingVR\Library\PackageCache\com.unity.ide.vscode@1.2.4
+      resolvedPath: D:\GitHub\BowlingVR\BowlingVR\Library\PackageCache\com.unity.ide.vscode@1.2.4
       assetPath: Packages/com.unity.ide.vscode
       name: com.unity.ide.vscode
       displayName: Visual Studio Code Editor
@@ -431,164 +431,12 @@ m_PackageAssets:
         url: git+https://github.com/Unity-Technologies/com.unity.ide.vscode.git
         revision: 1f4f605d5c988cb610c372b5c5216c46cc8f5d30
         path: 
-    - packageId: com.unity.learn.iet-framework@1.2.3
-      testable: 0
-      isDirectDependency: 1
-      version: 1.2.3
-      source: 1
-      resolvedPath: C:\Users\basti\BowlingVR\BowlingVR\Library\PackageCache\com.unity.learn.iet-framework@1.2.3
-      assetPath: Packages/com.unity.learn.iet-framework
-      name: com.unity.learn.iet-framework
-      displayName: Tutorial Framework
-      author:
-        name: 
-        email: 
-        url: 
-      category: 
-      type: 
-      description: This package is used to display interactive in-Editor tutorials
-        in tutorial projects and project templates. This package is meant to be used
-        only by Unity internally.
-      status: 4
-      errors: []
-      versions:
-        all:
-        - 0.1.4-preview
-        - 0.1.8-preview
-        - 0.1.10-preview
-        - 0.1.12-preview.2
-        - 0.1.13-preview
-        - 0.1.14-preview
-        - 0.1.15-preview
-        - 0.1.16-preview
-        - 0.1.17-preview
-        - 0.1.18-preview
-        - 0.2.0-preview.1
-        - 0.2.1-preview.1
-        - 0.2.2-preview
-        - 0.2.3-preview.1
-        - 0.3.0-preview.5
-        - 0.4.0-preview.1
-        - 0.5.0-preview.2
-        - 0.5.1-preview
-        - 0.5.1-preview.1
-        - 1.0.0
-        - 1.0.1
-        - 1.0.2
-        - 1.0.3-preview.1
-        - 1.0.3-preview.2
-        - 1.0.3
-        - 1.1.0-preview.2
-        - 1.1.0-preview.3
-        - 1.1.0-preview.4
-        - 1.1.0
-        - 1.2.0
-        - 1.2.1
-        - 1.2.2
-        - 1.2.3
-        - 2.0.0-pre.1
-        - 2.0.0-pre.3
-        - 2.0.0-pre.4
-        - 2.0.0-pre.5
-        - 2.0.0-pre.6
-        - 2.0.0
-        - 2.1.0-pre.1
-        - 2.1.0
-        - 2.1.1-pre.1
-        - 2.1.1-pre.2
-        - 2.1.1
-        - 2.1.2-pre.2
-        - 2.1.2
-        - 2.2.0
-        - 2.2.1
-        compatible:
-        - 0.1.4-preview
-        - 0.1.8-preview
-        - 0.1.10-preview
-        - 0.1.12-preview.2
-        - 0.1.13-preview
-        - 0.1.14-preview
-        - 0.1.15-preview
-        - 0.1.16-preview
-        - 0.1.17-preview
-        - 0.1.18-preview
-        - 0.2.0-preview.1
-        - 0.2.1-preview.1
-        - 0.2.2-preview
-        - 0.2.3-preview.1
-        - 0.3.0-preview.5
-        - 0.4.0-preview.1
-        - 0.5.0-preview.2
-        - 0.5.1-preview
-        - 0.5.1-preview.1
-        - 1.0.0
-        - 1.0.1
-        - 1.0.2
-        - 1.0.3-preview.1
-        - 1.0.3-preview.2
-        - 1.0.3
-        - 1.1.0-preview.2
-        - 1.1.0-preview.3
-        - 1.1.0-preview.4
-        - 1.1.0
-        - 1.2.0
-        - 1.2.1
-        - 1.2.2
-        - 1.2.3
-        - 2.0.0-pre.1
-        - 2.0.0-pre.3
-        - 2.0.0-pre.4
-        - 2.0.0-pre.5
-        - 2.0.0-pre.6
-        - 2.0.0
-        - 2.1.0-pre.1
-        - 2.1.0
-        - 2.1.1-pre.1
-        - 2.1.1-pre.2
-        - 2.1.1
-        - 2.1.2-pre.2
-        - 2.1.2
-        - 2.2.0
-        - 2.2.1
-        verified: 
-      dependencies:
-      - name: com.unity.editorcoroutines
-        version: 1.0.0
-      - name: com.unity.settings-manager
-        version: 1.0.2
-      resolvedDependencies:
-      - name: com.unity.editorcoroutines
-        version: 1.0.0
-      - name: com.unity.settings-manager
-        version: 1.0.2
-      keywords:
-      - tutorials
-      registry:
-        id: main
-        name: 
-        url: https://packages.unity.com
-        scopes: []
-        isDefault: 1
-        capabilities: 7
-      hasRegistry: 1
-      hideInEditor: 1
-      entitlements:
-        isAllowed: 1
-      isAssetStorePackage: 0
-      datePublishedTicks: 637504962200000000
-      documentationUrl: 
-      hasRepository: 1
-      repository:
-        type: git
-        url: https://github.cds.internal.unity3d.com/unity/iet-package.git
-        revision: d8844989d65f92c6dede187e8149d129ac4f6a41
-        path: 
     - packageId: com.unity.test-framework@1.1.29
       testable: 0
       isDirectDependency: 1
       version: 1.1.29
       source: 1
-      resolvedPath: C:\Users\basti\BowlingVR\BowlingVR\Library\PackageCache\com.unity.test-framework@1.1.29
+      resolvedPath: D:\GitHub\BowlingVR\BowlingVR\Library\PackageCache\com.unity.test-framework@1.1.29
       assetPath: Packages/com.unity.test-framework
       name: com.unity.test-framework
       displayName: Test Framework
@@ -687,7 +535,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 3.0.6
       source: 1
-      resolvedPath: C:\Users\basti\BowlingVR\BowlingVR\Library\PackageCache\com.unity.textmeshpro@3.0.6
+      resolvedPath: D:\GitHub\BowlingVR\BowlingVR\Library\PackageCache\com.unity.textmeshpro@3.0.6
       assetPath: Packages/com.unity.textmeshpro
       name: com.unity.textmeshpro
       displayName: TextMeshPro
@@ -853,7 +701,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 1.4.8
       source: 1
-      resolvedPath: C:\Users\basti\BowlingVR\BowlingVR\Library\PackageCache\com.unity.timeline@1.4.8
+      resolvedPath: D:\GitHub\BowlingVR\BowlingVR\Library\PackageCache\com.unity.timeline@1.4.8
       assetPath: Packages/com.unity.timeline
       name: com.unity.timeline
       displayName: Timeline
@@ -1019,7 +867,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 1.0.0
       source: 2
-      resolvedPath: C:\Users\basti\BowlingVR\BowlingVR\Library\PackageCache\com.unity.ugui@1.0.0
+      resolvedPath: D:\GitHub\BowlingVR\BowlingVR\Library\PackageCache\com.unity.ugui@1.0.0
       assetPath: Packages/com.unity.ugui
       name: com.unity.ugui
       displayName: Unity UI
@@ -1082,7 +930,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 2.0.1
       source: 1
-      resolvedPath: C:\Users\basti\BowlingVR\BowlingVR\Library\PackageCache\com.unity.xr.interaction.toolkit@2.0.1
+      resolvedPath: D:\GitHub\BowlingVR\BowlingVR\Library\PackageCache\com.unity.xr.interaction.toolkit@2.0.1
       assetPath: Packages/com.unity.xr.interaction.toolkit
       name: com.unity.xr.interaction.toolkit
       displayName: XR Interaction Toolkit
@@ -1216,7 +1064,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 4.2.1
       source: 1
-      resolvedPath: C:\Users\basti\BowlingVR\BowlingVR\Library\PackageCache\com.unity.xr.management@4.2.1
+      resolvedPath: D:\GitHub\BowlingVR\BowlingVR\Library\PackageCache\com.unity.xr.management@4.2.1
       assetPath: Packages/com.unity.xr.management
       name: com.unity.xr.management
       displayName: XR Plugin Management
@@ -1319,7 +1167,7 @@ m_PackageAssets:
       - name: com.unity.xr.legacyinputhelpers
         version: 2.1.8
       - name: com.unity.subsystemregistration
-        version: 1.1.0
+        version: 1.0.6
       keywords:
       - xr
       - sdk
@@ -1348,153 +1196,12 @@ m_PackageAssets:
         url: https://github.cds.internal.unity3d.com/unity/xr.sdk.management.git
         revision: 9c99228887ff65cc0729434b3b9371d22b707cb9
         path: 
-    - packageId: com.unity.xr.oculus@1.11.0
-      testable: 0
-      isDirectDependency: 1
-      version: 1.11.0
-      source: 1
-      resolvedPath: C:\Users\basti\BowlingVR\BowlingVR\Library\PackageCache\com.unity.xr.oculus@1.11.0
-      assetPath: Packages/com.unity.xr.oculus
-      name: com.unity.xr.oculus
-      displayName: Oculus XR Plugin
-      author:
-        name: 
-        email: 
-        url: 
-      category: 
-      type: 
-      description: Provides display and input support for Oculus devices.
-      status: 4
-      errors: []
-      versions:
-        all:
-        - 0.0.9-preview
-        - 0.1.2-preview.1
-        - 0.8.4-preview
-        - 1.0.0-preview.4
-        - 1.0.0
-        - 1.0.2
-        - 1.0.3-preview.1
-        - 1.1.0-preview
-        - 1.1.0
-        - 1.1.1
-        - 1.1.2-preview
-        - 1.1.2
-        - 1.1.3-preview
-        - 1.1.3-preview.1
-        - 1.1.4-preview
-        - 1.1.4-preview.1
-        - 1.1.4
-        - 1.1.5-preview
-        - 1.1.5
-        - 1.2.0-preview.1
-        - 1.2.0
-        - 1.3.1
-        - 1.3.3
-        - 1.3.4
-        - 1.4.0-preview.1
-        - 1.4.0-preview.2
-        - 1.4.0
-        - 1.4.3
-        - 1.5.0
-        - 1.5.1
-        - 1.6.0-preview.1
-        - 1.6.0-preview.2
-        - 1.6.1
-        - 1.7.0-preview.1
-        - 1.7.0-preview.2
-        - 1.7.0
-        - 1.8.1
-        - 1.9.0-preview.1
-        - 1.9.0
-        - 1.9.1
-        - 1.10.0-preview.1
-        - 1.10.0-preview.2
-        - 1.10.0
-        - 1.10.1-preview.3
-        - 1.11.0
-        - 1.11.2
-        - 1.12.0
-        - 2.0.0-preview.1
-        - 2.0.0-preview.2
-        - 2.0.0-preview.4
-        - 2.0.0-preview.5
-        - 3.0.0-pre.1
-        - 3.0.0-pre.2
-        - 3.0.0-pre.4
-        - 3.0.0
-        compatible:
-        - 1.11.0
-        - 1.11.2
-        - 1.12.0
-        - 2.0.0-preview.1
-        - 2.0.0-preview.2
-        - 2.0.0-preview.4
-        - 2.0.0-preview.5
-        - 3.0.0-pre.2
-        verified: 1.11.2
-      dependencies:
-      - name: com.unity.xr.management
-        version: 4.0.1
-      - name: com.unity.ugui
-        version: 1.0.0
-      resolvedDependencies:
-      - name: com.unity.xr.management
-        version: 4.2.1
-      - name: com.unity.modules.subsystems
-        version: 1.0.0
-      - name: com.unity.modules.jsonserialize
-        version: 1.0.0
-      - name: com.unity.modules.vr
-        version: 1.0.0
-      - name: com.unity.modules.physics
-        version: 1.0.0
-      - name: com.unity.modules.xr
-        version: 1.0.0
-      - name: com.unity.xr.legacyinputhelpers
-        version: 2.1.8
-      - name: com.unity.subsystemregistration
-        version: 1.1.0
-      - name: com.unity.ugui
-        version: 1.0.0
-      - name: com.unity.modules.ui
-        version: 1.0.0
-      - name: com.unity.modules.imgui
-        version: 1.0.0
-      keywords:
-      - oculus
-      - xr
-      - vr
-      - virtual
-      - rift
-      - quest
-      - xreditorsubsystem
-      registry:
-        id: main
-        name: 
-        url: https://packages.unity.com
-        scopes: []
-        isDefault: 1
-        capabilities: 7
-      hasRegistry: 1
-      hideInEditor: 1
-      entitlements:
-        isAllowed: 1
-      isAssetStorePackage: 0
-      datePublishedTicks: 637703219930000000
-      documentationUrl: 
-      hasRepository: 1
-      repository:
-        type: git
-        url: https://github.cds.internal.unity3d.com/unity/xr.sdk.oculus.git
-        revision: 6bcd9f318b55832de811a794e4f987aab9bb0950
-        path: 
     - packageId: com.unity.xr.openxr@1.3.1
       testable: 0
       isDirectDependency: 1
       version: 1.3.1
       source: 1
-      resolvedPath: C:\Users\basti\BowlingVR\BowlingVR\Library\PackageCache\com.unity.xr.openxr@1.3.1
+      resolvedPath: D:\GitHub\BowlingVR\BowlingVR\Library\PackageCache\com.unity.xr.openxr@1.3.1
       assetPath: Packages/com.unity.xr.openxr
       name: com.unity.xr.openxr
       displayName: OpenXR Plugin
@@ -1560,7 +1267,7 @@ m_PackageAssets:
       - name: com.unity.xr.legacyinputhelpers
         version: 2.1.8
       - name: com.unity.subsystemregistration
-        version: 1.1.0
+        version: 1.0.6
       - name: com.unity.inputsystem
         version: 1.2.0
       - name: com.unity.modules.uielements
@@ -1596,155 +1303,12 @@ m_PackageAssets:
         url: https://github.cds.internal.unity3d.com/unity/xr.sdk.openxr.git
         revision: dd3e43afc5c298c91f87b3f41a640f4d0c1da50e
         path: 
-    - packageId: com.unity.xr.windowsmr@4.6.2
-      testable: 0
-      isDirectDependency: 1
-      version: 4.6.2
-      source: 1
-      resolvedPath: C:\Users\basti\BowlingVR\BowlingVR\Library\PackageCache\com.unity.xr.windowsmr@4.6.2
-      assetPath: Packages/com.unity.xr.windowsmr
-      name: com.unity.xr.windowsmr
-      displayName: Windows XR Plugin
-      author:
-        name: 
-        email: 
-        url: 
-      category: 
-      type: 
-      description: Provides implementation and support for Unity XR SDK, allowing
-        integration and use of Windows Mixed Reality devices.
-      status: 4
-      errors: []
-      versions:
-        all:
-        - 1.0.0-preview.3
-        - 1.0.0-preview.4
-        - 1.0.0-preview.9
-        - 2.0.1
-        - 2.0.3-preview.1
-        - 2.0.3
-        - 2.0.4-preview.3
-        - 2.0.4-preview.4
-        - 2.1.5
-        - 2.1.6-preview.1
-        - 2.1.6-preview.2
-        - 2.1.6-preview.3
-        - 2.2.0
-        - 2.3.0
-        - 2.3.1-preview.1
-        - 2.4.1-preview.1
-        - 2.4.1
-        - 2.5.2
-        - 2.6.0
-        - 2.6.1
-        - 2.7.0
-        - 2.8.0
-        - 2.9.0
-        - 2.9.1
-        - 2.9.2
-        - 3.0.0
-        - 3.0.1-preview.3
-        - 3.0.1-preview.4
-        - 3.1.3
-        - 3.1.5
-        - 3.1.6-preview.1
-        - 3.1.6-preview.2
-        - 3.1.6-preview.3
-        - 3.2.0
-        - 3.3.1
-        - 3.4.0
-        - 4.0.2
-        - 4.1.1
-        - 4.2.1
-        - 4.3.2
-        - 4.4.0
-        - 4.4.1
-        - 4.4.2
-        - 4.5.0
-        - 4.6.0
-        - 4.6.1
-        - 4.6.2
-        - 5.0.0
-        - 5.1.0-exp.1
-        - 5.1.0
-        - 5.2.0
-        - 5.2.1
-        - 5.2.2
-        - 5.3.0
-        - 5.4.1
-        compatible:
-        - 4.6.1
-        - 4.6.2
-        verified: 4.6.2
-      dependencies:
-      - name: com.unity.modules.subsystems
-        version: 1.0.0
-      - name: com.unity.modules.vr
-        version: 1.0.0
-      - name: com.unity.modules.xr
-        version: 1.0.0
-      - name: com.unity.xr.management
-        version: 4.0.1
-      - name: com.unity.xr.interactionsubsystems
-        version: 1.0.1
-      - name: com.unity.xr.arsubsystems
-        version: 4.0.9
-      resolvedDependencies:
-      - name: com.unity.modules.subsystems
-        version: 1.0.0
-      - name: com.unity.modules.jsonserialize
-        version: 1.0.0
-      - name: com.unity.modules.vr
-        version: 1.0.0
-      - name: com.unity.modules.physics
-        version: 1.0.0
-      - name: com.unity.modules.xr
-        version: 1.0.0
-      - name: com.unity.xr.management
-        version: 4.2.1
-      - name: com.unity.xr.legacyinputhelpers
-        version: 2.1.8
-      - name: com.unity.subsystemregistration
-        version: 1.1.0
-      - name: com.unity.xr.interactionsubsystems
-        version: 1.0.1
-      - name: com.unity.xr.arsubsystems
-        version: 4.1.7
-      keywords:
-      - windows
-      - ar
-      - augmented
-      - xr
-      - reality
-      - xreditorsubsystem
-      - mixed
-      - hololens
-      registry:
-        id: main
-        name: 
-        url: https://packages.unity.com
-        scopes: []
-        isDefault: 1
-        capabilities: 7
-      hasRegistry: 1
-      hideInEditor: 1
-      entitlements:
-        isAllowed: 1
-      isAssetStorePackage: 0
-      datePublishedTicks: 637789692120000000
-      documentationUrl: 
-      hasRepository: 1
-      repository:
-        type: git
-        url: https://github.cds.internal.unity3d.com/unity/xr.sdk.windowsmr.git
-        revision: 13bd9429ff1512b4a7efaaba095c90f1af17f40e
-        path: 
     - packageId: com.unity.modules.ai@1.0.0
       testable: 0
       isDirectDependency: 1
       version: 1.0.0
       source: 2
-      resolvedPath: C:\Users\basti\BowlingVR\BowlingVR\Library\PackageCache\com.unity.modules.ai@1.0.0
+      resolvedPath: D:\GitHub\BowlingVR\BowlingVR\Library\PackageCache\com.unity.modules.ai@1.0.0
       assetPath: Packages/com.unity.modules.ai
       name: com.unity.modules.ai
       displayName: AI
@@ -1792,7 +1356,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 1.0.0
       source: 2
-      resolvedPath: C:\Users\basti\BowlingVR\BowlingVR\Library\PackageCache\com.unity.modules.androidjni@1.0.0
+      resolvedPath: D:\GitHub\BowlingVR\BowlingVR\Library\PackageCache\com.unity.modules.androidjni@1.0.0
       assetPath: Packages/com.unity.modules.androidjni
       name: com.unity.modules.androidjni
       displayName: Android JNI
@@ -1840,7 +1404,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 1.0.0
       source: 2
-      resolvedPath: C:\Users\basti\BowlingVR\BowlingVR\Library\PackageCache\com.unity.modules.animation@1.0.0
+      resolvedPath: D:\GitHub\BowlingVR\BowlingVR\Library\PackageCache\com.unity.modules.animation@1.0.0
       assetPath: Packages/com.unity.modules.animation
       name: com.unity.modules.animation
       displayName: Animation
@@ -1888,7 +1452,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 1.0.0
       source: 2
-      resolvedPath: C:\Users\basti\BowlingVR\BowlingVR\Library\PackageCache\com.unity.modules.assetbundle@1.0.0
+      resolvedPath: D:\GitHub\BowlingVR\BowlingVR\Library\PackageCache\com.unity.modules.assetbundle@1.0.0
       assetPath: Packages/com.unity.modules.assetbundle
       name: com.unity.modules.assetbundle
       displayName: Asset Bundle
@@ -1936,7 +1500,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 1.0.0
       source: 2
-      resolvedPath: C:\Users\basti\BowlingVR\BowlingVR\Library\PackageCache\com.unity.modules.audio@1.0.0
+      resolvedPath: D:\GitHub\BowlingVR\BowlingVR\Library\PackageCache\com.unity.modules.audio@1.0.0
       assetPath: Packages/com.unity.modules.audio
       name: com.unity.modules.audio
       displayName: Audio
@@ -1984,7 +1548,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 1.0.0
       source: 2
-      resolvedPath: C:\Users\basti\BowlingVR\BowlingVR\Library\PackageCache\com.unity.modules.cloth@1.0.0
+      resolvedPath: D:\GitHub\BowlingVR\BowlingVR\Library\PackageCache\com.unity.modules.cloth@1.0.0
       assetPath: Packages/com.unity.modules.cloth
       name: com.unity.modules.cloth
       displayName: Cloth
@@ -2036,7 +1600,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 1.0.0
       source: 2
-      resolvedPath: C:\Users\basti\BowlingVR\BowlingVR\Library\PackageCache\com.unity.modules.director@1.0.0
+      resolvedPath: D:\GitHub\BowlingVR\BowlingVR\Library\PackageCache\com.unity.modules.director@1.0.0
       assetPath: Packages/com.unity.modules.director
       name: com.unity.modules.director
       displayName: Director
@@ -2092,7 +1656,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 1.0.0
       source: 2
-      resolvedPath: C:\Users\basti\BowlingVR\BowlingVR\Library\PackageCache\com.unity.modules.imageconversion@1.0.0
+      resolvedPath: D:\GitHub\BowlingVR\BowlingVR\Library\PackageCache\com.unity.modules.imageconversion@1.0.0
       assetPath: Packages/com.unity.modules.imageconversion
       name: com.unity.modules.imageconversion
       displayName: Image Conversion
@@ -2141,7 +1705,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 1.0.0
       source: 2
-      resolvedPath: C:\Users\basti\BowlingVR\BowlingVR\Library\PackageCache\com.unity.modules.imgui@1.0.0
+      resolvedPath: D:\GitHub\BowlingVR\BowlingVR\Library\PackageCache\com.unity.modules.imgui@1.0.0
       assetPath: Packages/com.unity.modules.imgui
       name: com.unity.modules.imgui
       displayName: IMGUI
@@ -2189,7 +1753,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 1.0.0
       source: 2
-      resolvedPath: C:\Users\basti\BowlingVR\BowlingVR\Library\PackageCache\com.unity.modules.jsonserialize@1.0.0
+      resolvedPath: D:\GitHub\BowlingVR\BowlingVR\Library\PackageCache\com.unity.modules.jsonserialize@1.0.0
       assetPath: Packages/com.unity.modules.jsonserialize
       name: com.unity.modules.jsonserialize
       displayName: JSONSerialize
@@ -2237,7 +1801,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 1.0.0
       source: 2
-      resolvedPath: C:\Users\basti\BowlingVR\BowlingVR\Library\PackageCache\com.unity.modules.particlesystem@1.0.0
+      resolvedPath: D:\GitHub\BowlingVR\BowlingVR\Library\PackageCache\com.unity.modules.particlesystem@1.0.0
       assetPath: Packages/com.unity.modules.particlesystem
       name: com.unity.modules.particlesystem
       displayName: Particle System
@@ -2285,7 +1849,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 1.0.0
       source: 2
-      resolvedPath: C:\Users\basti\BowlingVR\BowlingVR\Library\PackageCache\com.unity.modules.physics@1.0.0
+      resolvedPath: D:\GitHub\BowlingVR\BowlingVR\Library\PackageCache\com.unity.modules.physics@1.0.0
       assetPath: Packages/com.unity.modules.physics
       name: com.unity.modules.physics
       displayName: Physics
@@ -2333,7 +1897,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 1.0.0
       source: 2
-      resolvedPath: C:\Users\basti\BowlingVR\BowlingVR\Library\PackageCache\com.unity.modules.physics2d@1.0.0
+      resolvedPath: D:\GitHub\BowlingVR\BowlingVR\Library\PackageCache\com.unity.modules.physics2d@1.0.0
       assetPath: Packages/com.unity.modules.physics2d
       name: com.unity.modules.physics2d
       displayName: Physics 2D
@@ -2381,7 +1945,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 1.0.0
       source: 2
-      resolvedPath: C:\Users\basti\BowlingVR\BowlingVR\Library\PackageCache\com.unity.modules.screencapture@1.0.0
+      resolvedPath: D:\GitHub\BowlingVR\BowlingVR\Library\PackageCache\com.unity.modules.screencapture@1.0.0
       assetPath: Packages/com.unity.modules.screencapture
       name: com.unity.modules.screencapture
       displayName: Screen Capture
@@ -2433,7 +1997,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 1.0.0
       source: 2
-      resolvedPath: C:\Users\basti\BowlingVR\BowlingVR\Library\PackageCache\com.unity.modules.terrain@1.0.0
+      resolvedPath: D:\GitHub\BowlingVR\BowlingVR\Library\PackageCache\com.unity.modules.terrain@1.0.0
       assetPath: Packages/com.unity.modules.terrain
       name: com.unity.modules.terrain
       displayName: Terrain
@@ -2481,7 +2045,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 1.0.0
       source: 2
-      resolvedPath: C:\Users\basti\BowlingVR\BowlingVR\Library\PackageCache\com.unity.modules.terrainphysics@1.0.0
+      resolvedPath: D:\GitHub\BowlingVR\BowlingVR\Library\PackageCache\com.unity.modules.terrainphysics@1.0.0
       assetPath: Packages/com.unity.modules.terrainphysics
       name: com.unity.modules.terrainphysics
       displayName: Terrain Physics
@@ -2537,7 +2101,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 1.0.0
       source: 2
-      resolvedPath: C:\Users\basti\BowlingVR\BowlingVR\Library\PackageCache\com.unity.modules.tilemap@1.0.0
+      resolvedPath: D:\GitHub\BowlingVR\BowlingVR\Library\PackageCache\com.unity.modules.tilemap@1.0.0
       assetPath: Packages/com.unity.modules.tilemap
       name: com.unity.modules.tilemap
       displayName: Tilemap
@@ -2589,7 +2153,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 1.0.0
       source: 2
-      resolvedPath: C:\Users\basti\BowlingVR\BowlingVR\Library\PackageCache\com.unity.modules.ui@1.0.0
+      resolvedPath: D:\GitHub\BowlingVR\BowlingVR\Library\PackageCache\com.unity.modules.ui@1.0.0
       assetPath: Packages/com.unity.modules.ui
       name: com.unity.modules.ui
       displayName: UI
@@ -2637,7 +2201,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 1.0.0
       source: 2
-      resolvedPath: C:\Users\basti\BowlingVR\BowlingVR\Library\PackageCache\com.unity.modules.uielements@1.0.0
+      resolvedPath: D:\GitHub\BowlingVR\BowlingVR\Library\PackageCache\com.unity.modules.uielements@1.0.0
       assetPath: Packages/com.unity.modules.uielements
       name: com.unity.modules.uielements
       displayName: UIElements
@@ -2701,7 +2265,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 1.0.0
       source: 2
-      resolvedPath: C:\Users\basti\BowlingVR\BowlingVR\Library\PackageCache\com.unity.modules.umbra@1.0.0
+      resolvedPath: D:\GitHub\BowlingVR\BowlingVR\Library\PackageCache\com.unity.modules.umbra@1.0.0
       assetPath: Packages/com.unity.modules.umbra
       name: com.unity.modules.umbra
       displayName: Umbra
@@ -2749,7 +2313,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 1.0.0
       source: 2
-      resolvedPath: C:\Users\basti\BowlingVR\BowlingVR\Library\PackageCache\com.unity.modules.unityanalytics@1.0.0
+      resolvedPath: D:\GitHub\BowlingVR\BowlingVR\Library\PackageCache\com.unity.modules.unityanalytics@1.0.0
       assetPath: Packages/com.unity.modules.unityanalytics
       name: com.unity.modules.unityanalytics
       displayName: Unity Analytics
@@ -2805,7 +2369,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 1.0.0
       source: 2
-      resolvedPath: C:\Users\basti\BowlingVR\BowlingVR\Library\PackageCache\com.unity.modules.unitywebrequest@1.0.0
+      resolvedPath: D:\GitHub\BowlingVR\BowlingVR\Library\PackageCache\com.unity.modules.unitywebrequest@1.0.0
       assetPath: Packages/com.unity.modules.unitywebrequest
       name: com.unity.modules.unitywebrequest
       displayName: Unity Web Request
@@ -2853,7 +2417,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 1.0.0
       source: 2
-      resolvedPath: C:\Users\basti\BowlingVR\BowlingVR\Library\PackageCache\com.unity.modules.unitywebrequestassetbundle@1.0.0
+      resolvedPath: D:\GitHub\BowlingVR\BowlingVR\Library\PackageCache\com.unity.modules.unitywebrequestassetbundle@1.0.0
       assetPath: Packages/com.unity.modules.unitywebrequestassetbundle
       name: com.unity.modules.unitywebrequestassetbundle
       displayName: Unity Web Request Asset Bundle
@@ -2909,7 +2473,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 1.0.0
       source: 2
-      resolvedPath: C:\Users\basti\BowlingVR\BowlingVR\Library\PackageCache\com.unity.modules.unitywebrequestaudio@1.0.0
+      resolvedPath: D:\GitHub\BowlingVR\BowlingVR\Library\PackageCache\com.unity.modules.unitywebrequestaudio@1.0.0
       assetPath: Packages/com.unity.modules.unitywebrequestaudio
       name: com.unity.modules.unitywebrequestaudio
       displayName: Unity Web Request Audio
@@ -2965,7 +2529,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 1.0.0
       source: 2
-      resolvedPath: C:\Users\basti\BowlingVR\BowlingVR\Library\PackageCache\com.unity.modules.unitywebrequesttexture@1.0.0
+      resolvedPath: D:\GitHub\BowlingVR\BowlingVR\Library\PackageCache\com.unity.modules.unitywebrequesttexture@1.0.0
       assetPath: Packages/com.unity.modules.unitywebrequesttexture
       name: com.unity.modules.unitywebrequesttexture
       displayName: Unity Web Request Texture
@@ -3021,7 +2585,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 1.0.0
       source: 2
-      resolvedPath: C:\Users\basti\BowlingVR\BowlingVR\Library\PackageCache\com.unity.modules.unitywebrequestwww@1.0.0
+      resolvedPath: D:\GitHub\BowlingVR\BowlingVR\Library\PackageCache\com.unity.modules.unitywebrequestwww@1.0.0
       assetPath: Packages/com.unity.modules.unitywebrequestwww
       name: com.unity.modules.unitywebrequestwww
       displayName: Unity Web Request WWW
@@ -3093,7 +2657,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 1.0.0
       source: 2
-      resolvedPath: C:\Users\basti\BowlingVR\BowlingVR\Library\PackageCache\com.unity.modules.vehicles@1.0.0
+      resolvedPath: D:\GitHub\BowlingVR\BowlingVR\Library\PackageCache\com.unity.modules.vehicles@1.0.0
       assetPath: Packages/com.unity.modules.vehicles
       name: com.unity.modules.vehicles
       displayName: Vehicles
@@ -3145,7 +2709,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 1.0.0
       source: 2
-      resolvedPath: C:\Users\basti\BowlingVR\BowlingVR\Library\PackageCache\com.unity.modules.video@1.0.0
+      resolvedPath: D:\GitHub\BowlingVR\BowlingVR\Library\PackageCache\com.unity.modules.video@1.0.0
       assetPath: Packages/com.unity.modules.video
       name: com.unity.modules.video
       displayName: Video
@@ -3205,7 +2769,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 1.0.0
       source: 2
-      resolvedPath: C:\Users\basti\BowlingVR\BowlingVR\Library\PackageCache\com.unity.modules.vr@1.0.0
+      resolvedPath: D:\GitHub\BowlingVR\BowlingVR\Library\PackageCache\com.unity.modules.vr@1.0.0
       assetPath: Packages/com.unity.modules.vr
       name: com.unity.modules.vr
       displayName: VR
@@ -3267,7 +2831,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 1.0.0
       source: 2
-      resolvedPath: C:\Users\basti\BowlingVR\BowlingVR\Library\PackageCache\com.unity.modules.wind@1.0.0
+      resolvedPath: D:\GitHub\BowlingVR\BowlingVR\Library\PackageCache\com.unity.modules.wind@1.0.0
       assetPath: Packages/com.unity.modules.wind
       name: com.unity.modules.wind
       displayName: Wind
@@ -3315,7 +2879,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 1.0.0
       source: 2
-      resolvedPath: C:\Users\basti\BowlingVR\BowlingVR\Library\PackageCache\com.unity.modules.xr@1.0.0
+      resolvedPath: D:\GitHub\BowlingVR\BowlingVR\Library\PackageCache\com.unity.modules.xr@1.0.0
       assetPath: Packages/com.unity.modules.xr
       name: com.unity.modules.xr
       displayName: XR
@@ -3375,7 +2939,7 @@ m_PackageAssets:
       isDirectDependency: 0
       version: 1.0.0
       source: 2
-      resolvedPath: C:\Users\basti\BowlingVR\BowlingVR\Library\PackageCache\com.unity.modules.subsystems@1.0.0
+      resolvedPath: D:\GitHub\BowlingVR\BowlingVR\Library\PackageCache\com.unity.modules.subsystems@1.0.0
       assetPath: Packages/com.unity.modules.subsystems
       name: com.unity.modules.subsystems
       displayName: Subsystems
@@ -3427,7 +2991,7 @@ m_PackageAssets:
       isDirectDependency: 0
       version: 1.0.0
       source: 2
-      resolvedPath: C:\Users\basti\BowlingVR\BowlingVR\Library\PackageCache\com.unity.modules.uielementsnative@1.0.0
+      resolvedPath: D:\GitHub\BowlingVR\BowlingVR\Library\PackageCache\com.unity.modules.uielementsnative@1.0.0
       assetPath: Packages/com.unity.modules.uielementsnative
       name: com.unity.modules.uielementsnative
       displayName: UIElements Native
@@ -3481,215 +3045,12 @@ m_PackageAssets:
         url: 
         revision: 
         path: 
-    - packageId: com.unity.xr.interactionsubsystems@1.0.1
-      testable: 0
-      isDirectDependency: 0
-      version: 1.0.1
-      source: 1
-      resolvedPath: C:\Users\basti\BowlingVR\BowlingVR\Library\PackageCache\com.unity.xr.interactionsubsystems@1.0.1
-      assetPath: Packages/com.unity.xr.interactionsubsystems
-      name: com.unity.xr.interactionsubsystems
-      displayName: XR Interaction Subsystems
-      author:
-        name: 
-        email: 
-        url: 
-      category: 
-      type: 
-      description: Contains definitions for Interaction Subsystems. This package
-        is a dependency of provider packages.
-      status: 4
-      errors: []
-      versions:
-        all:
-        - 0.0.1-preview.3
-        - 1.0.0
-        - 1.0.1
-        compatible:
-        - 0.0.1-preview.3
-        - 1.0.0
-        - 1.0.1
-        verified: 1.0.1
-      dependencies:
-      - name: com.unity.subsystemregistration
-        version: 1.0.5
-      resolvedDependencies:
-      - name: com.unity.subsystemregistration
-        version: 1.1.0
-      - name: com.unity.modules.subsystems
-        version: 1.0.0
-      - name: com.unity.modules.jsonserialize
-        version: 1.0.0
-      keywords:
-      - subsystem
-      - XR
-      - Interaction
-      registry:
-        id: main
-        name: 
-        url: https://packages.unity.com
-        scopes: []
-        isDefault: 1
-        capabilities: 7
-      hasRegistry: 1
-      hideInEditor: 1
-      entitlements:
-        isAllowed: 1
-      isAssetStorePackage: 0
-      datePublishedTicks: 637056471600000000
-      documentationUrl: 
-      hasRepository: 1
-      repository:
-        type: git
-        url: git@github.cds.internal.unity3d.com:unity/com.unity.xr.interactionsubsystems.git
-        revision: c9d1e6a52c5806d8ec4d9f74ec9eaaf54f07d2c6
-        path: 
-    - packageId: com.unity.xr.arsubsystems@4.1.7
-      testable: 0
-      isDirectDependency: 0
-      version: 4.1.7
-      source: 1
-      resolvedPath: C:\Users\basti\BowlingVR\BowlingVR\Library\PackageCache\com.unity.xr.arsubsystems@4.1.7
-      assetPath: Packages/com.unity.xr.arsubsystems
-      name: com.unity.xr.arsubsystems
-      displayName: AR Subsystems
-      author:
-        name: 
-        email: 
-        url: 
-      category: 
-      type: 
-      description: Contains definitions for AR Subsystems. This package is a dependency
-        of provider packages, as well as AR Foundation.
-      status: 4
-      errors: []
-      versions:
-        all:
-        - 2.0.2
-        - 2.1.0-preview.1
-        - 2.1.0-preview.2
-        - 2.1.0
-        - 2.1.1
-        - 2.1.2
-        - 2.1.3
-        - 2.1.14
-        - 2.1.16
-        - 2.1.18
-        - 2.1.19
-        - 2.2.0-preview.2
-        - 2.2.0-preview.3
-        - 2.2.0-preview.6
-        - 3.0.0-preview.1
-        - 3.0.0-preview.2
-        - 3.0.0-preview.3
-        - 3.0.0-preview.4
-        - 3.0.0
-        - 3.0.2
-        - 3.1.0-preview.1
-        - 3.1.0-preview.2
-        - 3.1.0-preview.4
-        - 3.1.0-preview.6
-        - 3.1.0-preview.7
-        - 3.1.0-preview.8
-        - 3.1.3
-        - 3.1.5
-        - 3.1.6
-        - 3.1.10
-        - 4.0.0-preview.1
-        - 4.0.0-preview.3
-        - 4.0.1
-        - 4.0.8
-        - 4.0.9
-        - 4.0.10
-        - 4.0.12
-        - 4.1.0-preview.1
-        - 4.1.0-preview.2
-        - 4.1.0-preview.3
-        - 4.1.0-preview.5
-        - 4.1.0-preview.6
-        - 4.1.0-preview.7
-        - 4.1.0-preview.9
-        - 4.1.0-preview.10
-        - 4.1.0-preview.11
-        - 4.1.0-preview.12
-        - 4.1.0-preview.13
-        - 4.1.1
-        - 4.1.3
-        - 4.1.5
-        - 4.1.7
-        - 4.1.9
-        - 4.2.0-pre.2
-        - 4.2.0-pre.3
-        - 4.2.0-pre.4
-        - 4.2.0-pre.5
-        - 4.2.0-pre.7
-        - 4.2.0-pre.8
-        - 4.2.0-pre.9
-        - 4.2.0-pre.10
-        - 4.2.0-pre.12
-        - 4.2.0
-        - 4.2.1
-        - 4.2.2
-        - 5.0.0-pre.5
-        - 5.0.0-pre.6
-        - 5.0.0-pre.7
-        - 5.0.0-pre.8
-        compatible:
-        - 4.1.7
-        - 4.1.9
-        - 4.2.0-pre.2
-        - 4.2.0-pre.3
-        - 4.2.0-pre.4
-        - 4.2.0-pre.5
-        - 4.2.0-pre.7
-        - 4.2.0-pre.8
-        - 4.2.0-pre.9
-        - 4.2.0-pre.10
-        - 4.2.0-pre.12
-        - 4.2.0
-        - 4.2.1
-        - 4.2.2
-        verified: 4.1.9
-      dependencies:
-      - name: com.unity.subsystemregistration
-        version: 1.1.0
-      resolvedDependencies:
-      - name: com.unity.subsystemregistration
-        version: 1.1.0
-      - name: com.unity.modules.subsystems
-        version: 1.0.0
-      - name: com.unity.modules.jsonserialize
-        version: 1.0.0
-      keywords:
-      - subsystem
-      - XR
-      - AR
-      registry:
-        id: main
-        name: 
-        url: https://packages.unity.com
-        scopes: []
-        isDefault: 1
-        capabilities: 7
-      hasRegistry: 1
-      hideInEditor: 1
-      entitlements:
-        isAllowed: 1
-      isAssetStorePackage: 0
-      datePublishedTicks: 637535033380000000
-      documentationUrl: 
-      hasRepository: 1
-      repository:
-        type: git
-        url: https://github.cds.internal.unity3d.com/unity/arfoundation.git
-        revision: b5352c36faf68b8ffc1bbddaa0f204f75d4ac5fb
-        path: 
     - packageId: com.unity.xr.legacyinputhelpers@2.1.8
       testable: 0
       isDirectDependency: 0
       version: 2.1.8
       source: 1
-      resolvedPath: C:\Users\basti\BowlingVR\BowlingVR\Library\PackageCache\com.unity.xr.legacyinputhelpers@2.1.8
+      resolvedPath: D:\GitHub\BowlingVR\BowlingVR\Library\PackageCache\com.unity.xr.legacyinputhelpers@2.1.8
       assetPath: Packages/com.unity.xr.legacyinputhelpers
       name: com.unity.xr.legacyinputhelpers
       displayName: XR Legacy Input Helpers
@@ -3779,12 +3140,70 @@ m_PackageAssets:
         url: https://github.cds.internal.unity3d.com/unity/com.unity.xr.legacyinputhelpers.git
         revision: ed3b32c709a0e51cf73fda4b200c59b48955c4be
         path: 
+    - packageId: com.unity.subsystemregistration@1.0.6
+      testable: 0
+      isDirectDependency: 0
+      version: 1.0.6
+      source: 1
+      resolvedPath: D:\GitHub\BowlingVR\BowlingVR\Library\PackageCache\com.unity.subsystemregistration@1.0.6
+      assetPath: Packages/com.unity.subsystemregistration
+      name: com.unity.subsystemregistration
+      displayName: Subsystem Registration
+      author:
+        name: 
+        email: 
+        url: 
+      category: 
+      type: 
+      description: Provides internal registration mechanism for standalone subsystems. 
+        It allows a standalone subsystem to inform the Subsystem Manager of its existence.
+      status: 4
+      errors: []
+      versions:
+        all:
+        - 1.0.0-preview.4
+        - 1.0.4
+        - 1.0.5
+        - 1.0.6
+        - 1.1.0
+        - 1.1.1
+        compatible:
+        - 1.0.6
+        - 1.1.0
+        - 1.1.1
+        verified: 1.1.1
+      dependencies: []
+      resolvedDependencies: []
+      keywords:
+      - subsystem
+      - registration
+      - internal
+      registry:
+        id: main
+        name: 
+        url: https://packages.unity.com
+        scopes: []
+        isDefault: 1
+        capabilities: 7
+      hasRegistry: 1
+      hideInEditor: 1
+      entitlements:
+        isAllowed: 1
+      isAssetStorePackage: 0
+      datePublishedTicks: 637056434700000000
+      documentationUrl: 
+      hasRepository: 1
+      repository:
+        type: git
+        url: git@github.cds.internal.unity3d.com:unity/com.unity.subsystemregistration.git
+        revision: 0b4157c6c0a160c51e74ead305aee77e6f29527d
+        path: 
     - packageId: com.unity.inputsystem@1.2.0
       testable: 0
       isDirectDependency: 0
       version: 1.2.0
       source: 1
-      resolvedPath: C:\Users\basti\BowlingVR\BowlingVR\Library\PackageCache\com.unity.inputsystem@1.2.0
+      resolvedPath: D:\GitHub\BowlingVR\BowlingVR\Library\PackageCache\com.unity.inputsystem@1.2.0
       assetPath: Packages/com.unity.inputsystem
       name: com.unity.inputsystem
       displayName: Input System
@@ -3914,7 +3333,7 @@ m_PackageAssets:
       isDirectDependency: 0
       version: 2.0.0
       source: 1
-      resolvedPath: C:\Users\basti\BowlingVR\BowlingVR\Library\PackageCache\com.unity.xr.core-utils@2.0.0
+      resolvedPath: D:\GitHub\BowlingVR\BowlingVR\Library\PackageCache\com.unity.xr.core-utils@2.0.0
       assetPath: Packages/com.unity.xr.core-utils
       name: com.unity.xr.core-utils
       displayName: XR Core Utilities
@@ -3991,7 +3410,7 @@ m_PackageAssets:
       isDirectDependency: 0
       version: 1.0.6
       source: 1
-      resolvedPath: C:\Users\basti\BowlingVR\BowlingVR\Library\PackageCache\com.unity.ext.nunit@1.0.6
+      resolvedPath: D:\GitHub\BowlingVR\BowlingVR\Library\PackageCache\com.unity.ext.nunit@1.0.6
       assetPath: Packages/com.unity.ext.nunit
       name: com.unity.ext.nunit
       displayName: Custom NUnit
@@ -4049,138 +3468,12 @@ m_PackageAssets:
         url: https://github.cds.internal.unity3d.com/unity/com.unity.ext.nunit.git
         revision: 29ea4d6504a5f58fb3a6934db839aa80ae6d9d88
         path: 
-    - packageId: com.unity.editorcoroutines@1.0.0
-      testable: 0
-      isDirectDependency: 0
-      version: 1.0.0
-      source: 1
-      resolvedPath: C:\Users\basti\BowlingVR\BowlingVR\Library\PackageCache\com.unity.editorcoroutines@1.0.0
-      assetPath: Packages/com.unity.editorcoroutines
-      name: com.unity.editorcoroutines
-      displayName: Editor Coroutines
-      author:
-        name: 
-        email: 
-        url: 
-      category: 
-      type: 
-      description: 'The editor coroutines package allows developers to start constructs
-        similar to Unity''s monobehaviour based coroutines within the editor using
-        abitrary objects. '
-      status: 4
-      errors: []
-      versions:
-        all:
-        - 0.0.1-preview.3
-        - 0.0.1-preview.4
-        - 0.0.1-preview.5
-        - 0.0.2-preview.1
-        - 0.1.0-preview.1
-        - 0.1.0-preview.2
-        - 1.0.0
-        compatible:
-        - 0.0.1-preview.3
-        - 0.0.1-preview.4
-        - 0.0.1-preview.5
-        - 0.0.2-preview.1
-        - 0.1.0-preview.1
-        - 0.1.0-preview.2
-        - 1.0.0
-        verified: 1.0.0
-      dependencies: []
-      resolvedDependencies: []
-      keywords:
-      - coroutine
-      - coroutines
-      - editor
-      registry:
-        id: main
-        name: 
-        url: https://packages.unity.com
-        scopes: []
-        isDefault: 1
-        capabilities: 7
-      hasRegistry: 1
-      hideInEditor: 1
-      entitlements:
-        isAllowed: 1
-      isAssetStorePackage: 0
-      datePublishedTicks: 637232611380000000
-      documentationUrl: 
-      hasRepository: 1
-      repository:
-        type: git
-        url: https://github.cds.internal.unity3d.com/unity/com.unity.editorcoroutines.git
-        revision: f67fc9992bbc7a553b17375de53a8b2db136528e
-        path: 
-    - packageId: com.unity.settings-manager@1.0.2
-      testable: 0
-      isDirectDependency: 0
-      version: 1.0.2
-      source: 1
-      resolvedPath: C:\Users\basti\BowlingVR\BowlingVR\Library\PackageCache\com.unity.settings-manager@1.0.2
-      assetPath: Packages/com.unity.settings-manager
-      name: com.unity.settings-manager
-      displayName: Settings Manager
-      author:
-        name: 
-        email: 
-        url: 
-      category: 
-      type: 
-      description: A framework for making any serializable field a setting, complete
-        with a pre-built settings interface.
-      status: 4
-      errors: []
-      versions:
-        all:
-        - 0.1.0-preview.4
-        - 0.1.0-preview.8
-        - 1.0.0
-        - 1.0.1
-        - 1.0.2
-        - 1.0.3
-        - 2.0.0
-        - 2.0.1
-        compatible:
-        - 0.1.0-preview.4
-        - 0.1.0-preview.8
-        - 1.0.0
-        - 1.0.1
-        - 1.0.2
-        - 1.0.3
-        - 2.0.0
-        - 2.0.1
-        verified: 1.0.3
-      dependencies: []
-      resolvedDependencies: []
-      keywords: []
-      registry:
-        id: main
-        name: 
-        url: https://packages.unity.com
-        scopes: []
-        isDefault: 1
-        capabilities: 7
-      hasRegistry: 1
-      hideInEditor: 1
-      entitlements:
-        isAllowed: 1
-      isAssetStorePackage: 0
-      datePublishedTicks: 637187671360000000
-      documentationUrl: 
-      hasRepository: 1
-      repository:
-        type: git
-        url: git+https://github.com/Unity-Technologies/com.unity.settings-manager.git
-        revision: e8eedc87ca7850bac0f7b2257db4edb8c300a0f3
-        path: 
     - packageId: com.unity.nuget.newtonsoft-json@2.0.0
       testable: 0
       isDirectDependency: 0
       version: 2.0.0
       source: 1
-      resolvedPath: C:\Users\basti\BowlingVR\BowlingVR\Library\PackageCache\com.unity.nuget.newtonsoft-json@2.0.0
+      resolvedPath: D:\GitHub\BowlingVR\BowlingVR\Library\PackageCache\com.unity.nuget.newtonsoft-json@2.0.0
       assetPath: Packages/com.unity.nuget.newtonsoft-json
       name: com.unity.nuget.newtonsoft-json
       displayName: Newtonsoft Json
@@ -4258,7 +3551,7 @@ m_PackageAssets:
       isDirectDependency: 0
       version: 1.0.1
       source: 1
-      resolvedPath: C:\Users\basti\BowlingVR\BowlingVR\Library\PackageCache\com.unity.services.core@1.0.1
+      resolvedPath: D:\GitHub\BowlingVR\BowlingVR\Library\PackageCache\com.unity.services.core@1.0.1
       assetPath: Packages/com.unity.services.core
       name: com.unity.services.core
       displayName: Services Core
@@ -4324,71 +3617,7 @@ m_PackageAssets:
         url: https://github.cds.internal.unity3d.com/unity/operate-services-sdk.git
         revision: 4cd880d4fd5c60597629249bf4f324e4c8d7aa2e
         path: 
-    - packageId: com.unity.subsystemregistration@1.1.0
-      testable: 0
-      isDirectDependency: 0
-      version: 1.1.0
-      source: 1
-      resolvedPath: C:\Users\basti\BowlingVR\BowlingVR\Library\PackageCache\com.unity.subsystemregistration@1.1.0
-      assetPath: Packages/com.unity.subsystemregistration
-      name: com.unity.subsystemregistration
-      displayName: Subsystem Registration
-      author:
-        name: 
-        email: 
-        url: 
-      category: 
-      type: 
-      description: Provides internal registration mechanism for standalone subsystems. 
-        It allows a standalone subsystem to inform the Subsystem Manager of its existence.
-      status: 4
-      errors: []
-      versions:
-        all:
-        - 1.0.0-preview.4
-        - 1.0.4
-        - 1.0.5
-        - 1.0.6
-        - 1.1.0
-        - 1.1.1
-        compatible:
-        - 1.0.6
-        - 1.1.0
-        - 1.1.1
-        verified: 1.1.1
-      dependencies:
-      - name: com.unity.modules.subsystems
-        version: 1.0.0
-      resolvedDependencies:
-      - name: com.unity.modules.subsystems
-        version: 1.0.0
-      - name: com.unity.modules.jsonserialize
-        version: 1.0.0
-      keywords:
-      - subsystem
-      - registration
-      - internal
-      registry:
-        id: main
-        name: 
-        url: https://packages.unity.com
-        scopes: []
-        isDefault: 1
-        capabilities: 7
-      hasRegistry: 1
-      hideInEditor: 1
-      entitlements:
-        isAllowed: 1
-      isAssetStorePackage: 0
-      datePublishedTicks: 637314426150000000
-      documentationUrl: 
-      hasRepository: 1
-      repository:
-        type: git
-        url: https://github.cds.internal.unity3d.com/unity/com.unity.subsystemregistration.git
-        revision: 72584ba5248fbe79e560e795ad819f876954fceb
-        path: 
   m_LocalPackages:
     m_LocalFileStatus: []
-m_ProjectPath: C:/Users/basti/BowlingVR/BowlingVR/Packages
+m_ProjectPath: D:/GitHub/BowlingVR/BowlingVR/Packages
 m_EditorVersion: 2020.3.26f1 (7298b473bc1a)
