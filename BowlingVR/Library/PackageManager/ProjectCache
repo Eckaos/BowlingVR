@@ -5,16 +5,16 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 637825550844116846
-    m_Hash: 418816402
+      ticks: 637825620799724200
+    m_Hash: 3628106608
   m_LockFileStatus:
     m_FilePath: C:/Users/basti/BowlingVR/BowlingVR/Packages/packages-lock.json
     m_PathExists: 1
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 637825550844216846
-    m_Hash: 1081759577
+      ticks: 637825620799964229
+    m_Hash: 2704205074
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
 m_PackageAssets:
@@ -1489,12 +1489,119 @@ m_PackageAssets:
         url: https://github.cds.internal.unity3d.com/unity/xr.sdk.oculus.git
         revision: 6bcd9f318b55832de811a794e4f987aab9bb0950
         path: 
-    - packageId: com.unity.xr.windowsmr@4.6.1
+    - packageId: com.unity.xr.openxr@1.3.1
       testable: 0
       isDirectDependency: 1
-      version: 4.6.1
+      version: 1.3.1
       source: 1
-      resolvedPath: C:\Users\basti\BowlingVR\BowlingVR\Library\PackageCache\com.unity.xr.windowsmr@4.6.1
+      resolvedPath: C:\Users\basti\BowlingVR\BowlingVR\Library\PackageCache\com.unity.xr.openxr@1.3.1
+      assetPath: Packages/com.unity.xr.openxr
+      name: com.unity.xr.openxr
+      displayName: OpenXR Plugin
+      author:
+        name: 
+        email: 
+        url: 
+      category: 
+      type: 
+      description: OpenXR is an open, royalty-free standard developed by Khronos
+        that aims to simplify AR/VR development by allowing developers to target
+        a wide range of AR/VR devices. Use this plug-in to enable OpenXR in XR Plug-in
+        Management.
+      status: 4
+      errors: []
+      versions:
+        all:
+        - 0.1.1-preview.1
+        - 0.1.2-preview.2
+        - 1.0.0-pre.1
+        - 1.0.2
+        - 1.0.3
+        - 1.1.1
+        - 1.2.0
+        - 1.2.2
+        - 1.2.3
+        - 1.2.8
+        - 1.3.0
+        - 1.3.1
+        compatible:
+        - 0.1.1-preview.1
+        - 0.1.2-preview.2
+        - 1.0.2
+        - 1.0.3
+        - 1.1.1
+        - 1.2.0
+        - 1.2.2
+        - 1.2.3
+        - 1.2.8
+        - 1.3.0
+        - 1.3.1
+        verified: 1.3.1
+      dependencies:
+      - name: com.unity.xr.management
+        version: 4.0.1
+      - name: com.unity.xr.legacyinputhelpers
+        version: 2.1.2
+      - name: com.unity.inputsystem
+        version: 1.0.2
+      resolvedDependencies:
+      - name: com.unity.xr.management
+        version: 4.2.1
+      - name: com.unity.modules.subsystems
+        version: 1.0.0
+      - name: com.unity.modules.jsonserialize
+        version: 1.0.0
+      - name: com.unity.modules.vr
+        version: 1.0.0
+      - name: com.unity.modules.physics
+        version: 1.0.0
+      - name: com.unity.modules.xr
+        version: 1.0.0
+      - name: com.unity.xr.legacyinputhelpers
+        version: 2.1.8
+      - name: com.unity.subsystemregistration
+        version: 1.1.0
+      - name: com.unity.inputsystem
+        version: 1.2.0
+      - name: com.unity.modules.uielements
+        version: 1.0.0
+      - name: com.unity.modules.ui
+        version: 1.0.0
+      - name: com.unity.modules.imgui
+        version: 1.0.0
+      - name: com.unity.modules.uielementsnative
+        version: 1.0.0
+      keywords:
+      - openxr
+      - xr
+      - reality
+      - xreditorsubsystem
+      registry:
+        id: main
+        name: 
+        url: https://packages.unity.com
+        scopes: []
+        isDefault: 1
+        capabilities: 7
+      hasRegistry: 1
+      hideInEditor: 1
+      entitlements:
+        isAllowed: 1
+      isAssetStorePackage: 0
+      datePublishedTicks: 637740218810000000
+      documentationUrl: 
+      hasRepository: 1
+      repository:
+        type: git
+        url: https://github.cds.internal.unity3d.com/unity/xr.sdk.openxr.git
+        revision: dd3e43afc5c298c91f87b3f41a640f4d0c1da50e
+        path: 
+    - packageId: com.unity.xr.windowsmr@4.6.2
+      testable: 0
+      isDirectDependency: 1
+      version: 4.6.2
+      source: 1
+      resolvedPath: C:\Users\basti\BowlingVR\BowlingVR\Library\PackageCache\com.unity.xr.windowsmr@4.6.2
       assetPath: Packages/com.unity.xr.windowsmr
       name: com.unity.xr.windowsmr
       displayName: Windows XR Plugin
@@ -1624,13 +1731,13 @@ m_PackageAssets:
       entitlements:
         isAllowed: 1
       isAssetStorePackage: 0
-      datePublishedTicks: 637729271880000000
+      datePublishedTicks: 637789692120000000
       documentationUrl: 
       hasRepository: 1
       repository:
         type: git
         url: https://github.cds.internal.unity3d.com/unity/xr.sdk.windowsmr.git
-        revision: 0304c3170dd5daa4c5f5e60b37cc04e79bb7a4bd
+        revision: 13bd9429ff1512b4a7efaaba095c90f1af17f40e
         path: 
     - packageId: com.unity.modules.ai@1.0.0
       testable: 0
