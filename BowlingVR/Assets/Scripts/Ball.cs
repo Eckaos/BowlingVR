@@ -7,11 +7,15 @@ public class Ball : MonoBehaviour
     public Transform player;
     public TurnManager turnManager;
     public KegelsManager kegelsManager;
-    private void Update() {
-        if(Vector3.Distance(player.position, transform.position) < 25)
+
+    private void Update()
+    {
+
+        /*if (Vector3.Distance(player.position, transform.position) < 25)
             return;
+
         turnManager.Score(kegelsManager.GetNumberOfFallenKegels());
         GetComponent<Rigidbody>().angularVelocity = Vector3.zero;
-        transform.position = player.transform.position;
+        transform.position = player.transform.position;*/
     }
 }
