@@ -67,9 +67,8 @@ public class TurnManager : MonoBehaviour
     }
 
     public void RegenerateKegels() {
-        GameObject kegels = GameObject.Find("Quilles");
-        Vector3 kegelsPosition = kegels.transform.position;
+        Vector3 kegelsPosition = gutter.kegelsManager.transform.position;
+        Destroy(gutter.kegelsManager);
         gutter.kegelsManager = Instantiate(kegelsPrefab, kegelsPosition, Quaternion.identity).GetComponent<KegelsManager>();
-        Destroy(kegels);
     }
 }
