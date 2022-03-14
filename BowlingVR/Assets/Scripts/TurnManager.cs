@@ -14,6 +14,8 @@ public class TurnManager : MonoBehaviour
     public Text specialResult;
     public Text score;
     public GameObject kegelsPrefab;
+
+    public Gutter gutter;
     private void Start() {
         players = GameObject.FindGameObjectsWithTag("Player").Select(gameObject => gameObject.GetComponent<Player>()).ToList();
         player = players[playerIndex];
@@ -26,7 +28,7 @@ public class TurnManager : MonoBehaviour
         throws++;
         DisplaySpecialResult();
         specialResult.text = "";
-        if(throws >= 2) NextTurn();
+        if(throws >= 2 || fallenKegels == 10) NextTurn();
     }
 
     private void Update() {
@@ -67,7 +69,7 @@ public class TurnManager : MonoBehaviour
     public void RegenerateKegels() {
         GameObject kegels = GameObject.Find("Quilles");
         Vector3 kegelsPosition = kegels.transform.position;
-        Instantiate(kegelsPrefab, kegelsPosition, Quaternion.identity).GetComponent<KegelsManager>();
+        gutter.kegelsManager = Instantiate(kegelsPrefab, kegelsPosition, Quaternion.identity).GetComponent<KegelsManager>();
         Destroy(kegels);
     }
 }

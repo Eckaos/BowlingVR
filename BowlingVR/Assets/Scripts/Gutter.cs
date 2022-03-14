@@ -22,7 +22,6 @@ public class Gutter : MonoBehaviour
             turnManager.Score(kegelsManager.GetNumberOfFallenKegels());
             ball.GetComponent<Rigidbody>().angularVelocity = Vector3.zero;
             ball.position = player.transform.position;
-            kegelsManager = GameObject.Find("Quilles").GetComponent<KegelsManager>(); 
         }
     }
 }
