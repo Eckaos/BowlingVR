@@ -13,6 +13,7 @@ public class TurnManager : MonoBehaviour
     private int playerIndex = 0;
     public Text specialResult;
     public Text score;
+    public GameObject kegelsPrefab;
     private void Start() {
         players = GameObject.FindGameObjectsWithTag("Player").Select(gameObject => gameObject.GetComponent<Player>()).ToList();
         player = players[playerIndex];
@@ -38,6 +39,7 @@ public class TurnManager : MonoBehaviour
         if(IsSpare())
             player.scoreCalculator.doubleScoreCount++;
         score.text = player.GetTotalScore().ToString();
+        RegenerateKegels();
     }
 
     void NextTurn(){
@@ -60,5 +62,12 @@ public class TurnManager : MonoBehaviour
         else if(IsGutter())
             specialResult.text = "Gutter";
         yield return new WaitForSeconds(2);
+    }
+
+    public void RegenerateKegels() {
+        GameObject kegels = GameObject.Find("Quilles");
+        Vector3 kegelsPosition = kegels.transform.position;
+        Instantiate(kegelsPrefab, kegelsPosition, Quaternion.identity).GetComponent<KegelsManager>();
+        Destroy(kegels);
     }
 }
