@@ -4,8 +4,9 @@ using UnityEngine;
 
 public class Kegel : MonoBehaviour
 {
+    public GameObject point;
     public bool hasFallen () 
     {  
-        return transform.localEulerAngles.z  > 30 || transform.localEulerAngles.z < -30 || transform.localEulerAngles.x > 30 || transform.localEulerAngles.x < -30;
+        return point.transform.localPosition.y < GetComponent<Renderer>().bounds.size.y/2;
     }
 }
