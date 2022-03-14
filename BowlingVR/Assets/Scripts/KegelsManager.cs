@@ -11,7 +11,7 @@ public class KegelsManager : MonoBehaviour
     {
         List<Kegel> fallen = kegels.Where(kegel => kegel.hasFallen()).ToList();
         int numberOfFallen = kegels.RemoveAll(kegel => fallen.Contains(kegel));
-        fallen.ForEach(kegel => Destroy(kegel));
+        fallen.ForEach(kegel => Destroy(kegel.gameObject));
         return numberOfFallen;
     }
 }
