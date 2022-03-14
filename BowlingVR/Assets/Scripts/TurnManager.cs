@@ -23,11 +23,12 @@ public class TurnManager : MonoBehaviour
         this.fallenKegels += kegels;
         Scoring(kegels);
         throws++;
+        DisplaySpecialResult();
+        specialResult.text = "";
         if(throws >= 2) NextTurn();
     }
 
     private void Update() {
-        StartCoroutine(DisplaySpecialResult());
     }
 
     void Scoring(int kegels){
@@ -58,9 +59,6 @@ public class TurnManager : MonoBehaviour
             specialResult.text = "Spare";
         else if(IsGutter())
             specialResult.text = "Gutter";
-        else
-            specialResult.text = "";
-        
         yield return new WaitForSeconds(2);
     }
 }

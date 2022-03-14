@@ -4,11 +4,7 @@ using UnityEngine;
 
 public class BowlingScoreCalculator
 {
-    public int doubleScoreCount;
-    
-    private void Awake() {
-        doubleScoreCount = 0;
-    }
+    public int doubleScoreCount = 0;
 
     public int CalculateTurn(int numberOfFallenPins){
         if(doubleScoreCount > 0){
