@@ -12,6 +12,7 @@ public class TurnManager : MonoBehaviour
     private int throws = 0;
     private int playerIndex = 0;
     public Text specialResult;
+    public Text score;
     private void Start() {
         players = GameObject.FindGameObjectsWithTag("Player").Select(gameObject => gameObject.GetComponent<Player>()).ToList();
         player = players[playerIndex];
@@ -35,6 +36,7 @@ public class TurnManager : MonoBehaviour
             player.scoreCalculator.doubleScoreCount += 2;
         if(IsSpare())
             player.scoreCalculator.doubleScoreCount++;
+        score.text = player.GetTotalScore().ToString();
     }
 
     void NextTurn(){
