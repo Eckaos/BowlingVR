@@ -4,24 +4,19 @@ using UnityEngine;
 
 public class Gutter : MonoBehaviour
 {
-    public Transform player;
-    public TurnManager turnManager;
-    public KegelsManager kegelsManager;
-    public Transform ball;
-
-    private void Update()
-    {
-
-    }
+    [SerializeField]private Transform player;
+    [SerializeField]private TurnManager turnManager;
+    [SerializeField]private Transform ball;
+    public KegelManager kegelManager;
 
     private void OnTriggerEnter(Collider other)
     {
 
         if (other.GetComponent<Collider>().name == "Ball")
         {
-            turnManager.Score(kegelsManager.GetNumberOfFallenKegels());
-            ball.GetComponent<Rigidbody>().angularVelocity = Vector3.zero;
+            turnManager.Score(kegelManager.GetNumberOfFallenKegels());
             ball.position = player.transform.position;
+            ball.GetComponent<Rigidbody>().angularVelocity = Vector3.zero;
         }
     }
 }

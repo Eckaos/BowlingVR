@@ -4,9 +4,5 @@ using UnityEngine;
 
 public class Kegel : MonoBehaviour
 {
-    public GameObject point;
-    public bool hasFallen () 
-    {  
-        return Vector3.Angle(transform.up, Vector3.up) > 5;
-    }
+    public bool hasFallen () => Vector3.Angle(transform.up, Vector3.up) > 5;
 }

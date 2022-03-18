@@ -3,10 +3,10 @@ using System.Collections.Generic;
 using UnityEngine;
 using System.Linq;
 
-public class KegelsManager : MonoBehaviour
+public class KegelManager : MonoBehaviour
 {
     public List<Kegel> kegels;
-
+    
     public int GetNumberOfFallenKegels()
     {
         List<Kegel> fallen = kegels.Where(kegel => kegel.hasFallen()).ToList();

@@ -29,11 +29,7 @@ public class TurnManager : MonoBehaviour
         if(throws >= 2 || fallenKegels == 10) NextTurn();
     }
 
-    private void Update() {
-    }
-
     void Scoring(int kegels){
-        Debug.Log(player.scoreCalculator.doubleScoreCount);
         player.score.Add(player.scoreCalculator.CalculateTurn(kegels));
         if(IsStrike())
             player.scoreCalculator.doubleScoreCount += 2;
@@ -48,7 +44,7 @@ public class TurnManager : MonoBehaviour
         playerIndex++;
         if(playerIndex >= players.Count) playerIndex = 0;
         player = players[playerIndex];
-        RegenerateKegels();
+        StartCoroutine(RegenerateKegels());
     }
     bool IsStrike() => fallenKegels == 10 && throws == 1;
     bool IsSpare() => fallenKegels == 10 && throws == 2;
@@ -58,24 +54,22 @@ public class TurnManager : MonoBehaviour
     {
         if (IsStrike())
         {
-            Debug.Log("Strike");
             specialResult.text = "Strike";
         }
         else if (IsSpare()) {
-            Debug.Log("Spare");
             specialResult.text = "Spare";
     }
         else if (IsGutter()) {
-            Debug.Log("Gutter");
             specialResult.text = "Gutter";
         }
         yield return new WaitForSeconds(2);
         specialResult.text = "";
     }
 
-    public void RegenerateKegels() {
-        Vector3 kegelsPosition = gutter.kegelsManager.transform.position;
-        Destroy(gutter.kegelsManager.gameObject);
-        gutter.kegelsManager = Instantiate(kegelsPrefab, kegelsPosition, Quaternion.identity).GetComponent<KegelsManager>();
+    public IEnumerator RegenerateKegels() {
+        yield return new WaitForSeconds(2);
+        Vector3 kegelsPosition = gutter.kegelManager.transform.position;
+        Destroy(gutter.kegelManager.gameObject);
+        gutter.kegelManager = Instantiate(kegelsPrefab, kegelsPosition, Quaternion.identity).GetComponent<KegelManager>();
     }
 }
