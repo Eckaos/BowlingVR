@@ -14,7 +14,7 @@ public class ScoreTable : MonoBehaviour
         {
             if(score == 10)
                 scoreTexts[++index].text = "X";
-            else if(score+int.Parse(scoreTexts[index-1].text) == 10)
+            else if(index%2 == 0 && index >0 && scoreTexts[index-1].text != "-" && score+int.Parse(scoreTexts[index-1].text) == 10)
                 scoreTexts[index].text = "/";
             else if(score == 0)
                 scoreTexts[index].text = "-";
