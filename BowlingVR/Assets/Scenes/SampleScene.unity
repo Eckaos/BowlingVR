@@ -592,6 +592,7 @@ GameObject:
   - component: {fileID: 494572785}
   - component: {fileID: 494572784}
   - component: {fileID: 494572783}
+  - component: {fileID: 494572787}
   m_Layer: 0
   m_Name: LeftHand Controller
   m_TagString: Untagged
@@ -1087,6 +1088,19 @@ MonoBehaviour:
       m_Flags: 0
     m_Reference: {fileID: 7779212132400271959, guid: c348712bda248c246b8c49b3db54643f, type: 3}
   m_ButtonPressPoint: 0.5
+--- !u!114 &494572787
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 494572781}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b95cf638b10362645b261a900babde47, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hand: {fileID: 0}
 --- !u!1 &570970618
 GameObject:
   m_ObjectHideFlags: 0
@@ -2815,6 +2829,23 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1703902245 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: b44bcd8d2e51c9d4f80f2d54c3e5345b, type: 3}
+  m_PrefabInstance: {fileID: 194285942}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1703902247
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1703902245}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c464bee193623b04f893ec7a454984e9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1837630555
 GameObject:
   m_ObjectHideFlags: 0
@@ -3745,6 +3776,7 @@ GameObject:
   - component: {fileID: 2038392734}
   - component: {fileID: 2038392731}
   - component: {fileID: 2038392732}
+  - component: {fileID: 2038392733}
   m_Layer: 0
   m_Name: RightHand Controller
   m_TagString: Untagged
@@ -3858,6 +3890,19 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.2
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &2038392733
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2038392729}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b95cf638b10362645b261a900babde47, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hand: {fileID: 0}
 --- !u!114 &2038392734
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4144,6 +4189,18 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &2063013652
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2063013650}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c464bee193623b04f893ec7a454984e9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &5225463394776669664
 PrefabInstance:
   m_ObjectHideFlags: 0
