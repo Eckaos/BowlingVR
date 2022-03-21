@@ -15,6 +15,8 @@ public class TurnManager : MonoBehaviour
     public Text score;
     public GameObject kegelsPrefab;
 
+    public bool isGutter;
+
     public Gutter gutter;
     private void Start() {
         players = GameObject.FindGameObjectsWithTag("Player").Select(gameObject => gameObject.GetComponent<Player>()).ToList();
@@ -48,7 +50,7 @@ public class TurnManager : MonoBehaviour
     }
     bool IsStrike() => fallenKegels == 10 && throws == 1;
     bool IsSpare() => fallenKegels == 10 && throws == 2;
-    bool IsGutter() => fallenKegels == 0 && throws > 0;
+    bool IsGutter() => isGutter;
 
     public IEnumerator DisplaySpecialResult()
     {
