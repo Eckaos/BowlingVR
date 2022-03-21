@@ -15,6 +15,8 @@ public class TurnManager : MonoBehaviour
     public Text score;
     public GameObject kegelsPrefab;
 
+    public ScoreTable scoreTable;
+
     public bool isGutter;
 
     public Gutter gutter;
@@ -27,6 +29,8 @@ public class TurnManager : MonoBehaviour
         this.fallenKegels += kegels;
         throws++;
         Scoring(kegels);
+        score.text = player.GetTotalScore().ToString();
+        scoreTable.SetScores(player.score);
         StartCoroutine(DisplaySpecialResult());
         if(throws >= 2 || fallenKegels == 10) NextTurn();
     }
@@ -38,7 +42,6 @@ public class TurnManager : MonoBehaviour
             player.scoreCalculator.doubleScoreCount += 2;
         if(IsSpare())
             player.scoreCalculator.doubleScoreCount++;
-        score.text = player.GetTotalScore().ToString();
     }
 
     void NextTurn(){
