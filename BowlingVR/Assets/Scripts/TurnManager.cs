@@ -33,6 +33,7 @@ public class TurnManager : MonoBehaviour
 
     void Scoring(int kegels){
         player.score.Add(player.scoreCalculator.CalculateTurn(kegels));
+        isGutter = kegels == 0 ? true : false;
         if(IsStrike())
             player.scoreCalculator.doubleScoreCount += 2;
         if(IsSpare())
