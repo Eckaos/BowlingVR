@@ -25,6 +25,7 @@ public class TurnManager : MonoBehaviour
     }
     public void Scoring(int fallenKegels)
     {
+        kegelSpawner.playSound();
         throws++;
         player.CalculateTurn(fallenKegels);
         if(OnScoring != null) OnScoring.Invoke(fallenKegels);
