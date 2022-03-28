@@ -14,6 +14,7 @@ public class ScoreTable : MonoBehaviour
     private void Awake() {
         previousScores = new Stack<int>();
         turnManager.OnScoring += AddScoreToDisplay;
+        turnManager.OnChangingPlayer += ChangePlayer;
     }
 
     public void AddScoreToDisplay(int score)
@@ -27,6 +28,14 @@ public class ScoreTable : MonoBehaviour
         }
         textComponentToChange.text = GetTextToDisplayFromScore(score);
         previousScores.Push(score);
+    }
+
+    public void ChangePlayer(Stack<int> playerScores, int totalScore)
+    {
+        foreach (int score in playerScores)
+        {
+            AddScoreToDisplay(score);
+        }
     }
 
     private string GetTextToDisplayFromScore(int score)

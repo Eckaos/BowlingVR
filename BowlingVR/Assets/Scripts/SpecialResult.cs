@@ -32,7 +32,7 @@ public class SpecialResult : MonoBehaviour
         else if(score+previousScore == 10 && previousScore < 10) 
             textComponent.text = "Spare";
             
-        yield return new WaitForSeconds(2);
+        yield return new WaitForSeconds(3);
         textComponent.text = "";
     }
 

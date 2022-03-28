@@ -10,6 +10,7 @@ public class TotalScore : MonoBehaviour
     private int score;
     private void Awake() {
         turnManager.OnScoring += SetTotalScore;
+        turnManager.OnChangingPlayer += SetTotalScore;
         textComponent = GetComponent<Text>();
     }
 
@@ -17,5 +18,10 @@ public class TotalScore : MonoBehaviour
     {
         score += scoreToAdd;
         textComponent.text = score.ToString();
+    }
+
+    private void SetTotalScore(Stack<int> playerScores, int totalScore)
+    {
+        SetTotalScore(totalScore);
     }
 }

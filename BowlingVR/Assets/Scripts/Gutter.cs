@@ -16,6 +16,12 @@ public class Gutter : MonoBehaviour
     {
         Ball ball = other.GetComponent<Ball>();
         if(ball == null) return;
+        TriggerScoring(ball);
+    }
+
+    public IEnumerator TriggerScoring(Ball ball)
+    {
+        yield return new WaitForSeconds(2);
         turnManager.Scoring(kegelList.GetNumberOfFallenKegels());
         ball.Respawn();
     }

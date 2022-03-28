@@ -15,6 +15,9 @@ public class TurnManager : MonoBehaviour
     public delegate void ScoreUpdate(int score);
     public event ScoreUpdate OnScoring;
 
+    public delegate void ChangePlayer(Stack<int> scores, int totalScore);
+    public event ChangePlayer OnChangingPlayer;
+
     public delegate void EndGame();
     public event EndGame OnEndGame;
     
@@ -42,11 +45,12 @@ public class TurnManager : MonoBehaviour
         players.Enqueue(player);
         player = players.Dequeue();
         if(player.turn > 10 && OnEndGame != null)
-        {
             OnEndGame.Invoke();
-            return;
-        }
-        StartCoroutine(RegenerateKegels());
+        else
+            StartCoroutine(RegenerateKegels());
+            
+        if(OnChangingPlayer != null)
+            OnChangingPlayer.Invoke(player.scores, player.GetTotalScore());
     }
 
     public IEnumerator RegenerateKegels() 
