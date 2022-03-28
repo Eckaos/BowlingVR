@@ -20,17 +20,11 @@ public class Gutter : MonoBehaviour
         Ball ball = other.GetComponent<Ball>();
         if(ball == null) return;
         ball.Respawn();
-        StartCoroutine(TriggerScoring());
+        turnManager.Scoring(kegelList.GetNumberOfFallenKegels());
     }
 
     public void SetKegelList(KegelList list)
     {
         kegelList = list;
-    }
-
-    private IEnumerator TriggerScoring()
-    {
-        yield return new WaitForSeconds(2);
-        turnManager.Scoring(kegelList.GetNumberOfFallenKegels());
     }   
 }
