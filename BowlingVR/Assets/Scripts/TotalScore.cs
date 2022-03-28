@@ -22,6 +22,7 @@ public class TotalScore : MonoBehaviour
 
     private void SetTotalScore(Stack<int> playerScores, int totalScore)
     {
+        score = totalScore;
         UpdateUI(totalScore);
     }
 
