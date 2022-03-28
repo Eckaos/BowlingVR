@@ -4,7 +4,7 @@ public class TurnScore {
     
     public int throw1;
     public int throw2;
-    private int additionalThrow;
+    public int additionalThrow;
     public bool haveAdditionalThrow = false;
     public TurnScore()
     {

@@ -43,7 +43,6 @@ public class TurnManager : MonoBehaviour
         player.AddTurnScore();
         if(player.GetTurnScores().Count > 10 && OnEndGame != null)
             OnEndGame.Invoke();
-            GameObject.Find("ReplayButtonCanvas").SetActive(true);
         
         StartCoroutine(RegenerateKegels());
         if(OnChangingPlayer != null)
