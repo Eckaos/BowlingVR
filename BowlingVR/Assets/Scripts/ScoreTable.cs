@@ -17,44 +17,57 @@ public class ScoreTable : MonoBehaviour
         turnManager.OnChangingPlayer += ChangePlayer;
     }
 
-    public void AddScoreToDisplay(int score)
+    public void AddScoreToDisplay(TurnScore score, int totalScore)
     {
         Text textComponentToChange = scoreTexts.FirstOrDefault(textComponent => textComponent.text == "");
         if(textComponentToChange == null) return;
-        if(score == 10)
+        string specialResult = GetSpecialResultDisplay(score);
+        if(specialResult == "")
+        {
+
+            if(score.T1Gutter())
+                textComponentToChange.text = "-";
+            else
+                textComponentToChange.text = score.throw1.ToString();
+            
+            textComponentToChange = scoreTexts.FirstOrDefault(textComponent => textComponent.text == "");
+
+            if(score.T2Gutter())
+                textComponentToChange.text = "-";
+            else
+                textComponentToChange.text = score.throw2.ToString();
+        }
+        else if(specialResult == "X")
         {
             textComponentToChange.text = " ";
             textComponentToChange = scoreTexts.FirstOrDefault(textComponent => textComponent.text == "");
+            textComponentToChange.text = specialResult;
         }
-        textComponentToChange.text = GetTextToDisplayFromScore(score);
-        previousScores.Push(score);
+        else if(specialResult == "/")
+        {
+            textComponentToChange.text = score.throw1.ToString();
+            textComponentToChange = scoreTexts.FirstOrDefault(textComponent => textComponent.text == "");
+            textComponentToChange.text = specialResult;
+        }
     }
 
-    public void ChangePlayer(Stack<int> playerScores, int totalScore)
+    public void ChangePlayer(List<TurnScore> playerScores, int totalScore)
     {
-        previousScores.Clear();
-        List<int> scores = new List<int>(playerScores);
-
         foreach (Text t in scoreTexts)
             t.text = "";
 
-        for (int i = scores.Count - 1; i >= 0 ; i--)
+        foreach (TurnScore score in playerScores)
         {
-            AddScoreToDisplay(scores[i]);
+            AddScoreToDisplay(score, totalScore);
         }
     }
 
-    private string GetTextToDisplayFromScore(int score)
+    private string GetSpecialResultDisplay(TurnScore score)
     {
-        if(Spare(score, previousScores))
+        if(score.Spare())
             return "/";
-        else if(Strike(score, previousScores))
+        else if(score.Strike())
             return "X";
-        else if(score == 0)
-            return "-";
-        
-        return score.ToString();
+        else return "";
     }
-    private bool Strike(int score, Stack<int> scoreList) => score == 10 && scoreList.Count() > 0 && scoreList.Count() % 2 == 0;
-    private bool Spare(int score, Stack<int> scoreList) => scoreList.Count > 0 && scoreList.Count % 2 == 1 && scoreList.Peek() < 10 && score+scoreList.Peek() == 10;
 }

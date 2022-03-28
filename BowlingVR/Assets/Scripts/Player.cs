@@ -5,14 +5,14 @@ using UnityEngine;
 public class Player : MonoBehaviour
 {
     public Stack<int> scores;
-    int totalScore = 0;
+    public int totalScore = 0;
     public BowlingScoreCalculator scoreCalculator;
-    public int turn;
+    private List<TurnScore> scoreList;
+    private TurnScore currentTurnScore;
     void Start()
     {
-        scores = new Stack<int>();
         scoreCalculator = new BowlingScoreCalculator();
-        turn = 0;
+        scoreList = new List<TurnScore>();
     }
     public int GetTotalScore(){
         return totalScore;
@@ -20,22 +20,20 @@ public class Player : MonoBehaviour
 
     public void CalculateTurn(int score)
     {
+        currentTurnScore.AddScore(score);
         totalScore += scoreCalculator.CalculateTurn(score);
-        if(scores.Count > 0 && scores.Count % 2 == 1 && scores.Peek() < 10 && score+scores.Peek() == 10) 
+        if(currentTurnScore.Spare()) 
             scoreCalculator.doubleScoreCount++;
-        else if(score == 10 && scores.Count > 0 && scores.Count % 2 == 0)
+        else if(currentTurnScore.Strike())
             scoreCalculator.doubleScoreCount += 2;
-        scores.Push(score);
     }
 
-    private bool Strike(int score) => score == 10 && scores.Count > 0 && scores.Count % 2 == 0;
-    private bool Spare(int score) => scores.Count > 0 && scores.Count % 2 == 1 && scores.Peek() < 10 && score+scores.Peek() == 10;
-
-    public void ReloadPlayer()
+    public void AddTurnScore()
     {
-        turn = 0;
-        scores.Clear();
-        totalScore = 0;
-        scoreCalculator.doubleScoreCount = 0;
+        currentTurnScore = new TurnScore();
+        scoreList.Add(currentTurnScore);
     }
+
+    public TurnScore GetTurnScore() => currentTurnScore;
+    public List<TurnScore> GetTurnScores() => scoreList;
 }

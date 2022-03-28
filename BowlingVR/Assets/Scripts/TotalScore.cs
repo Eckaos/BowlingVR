@@ -7,22 +7,19 @@ public class TotalScore : MonoBehaviour
 {
     [SerializeField] private TurnManager turnManager;
     private Text textComponent;
-    private int score = 0;
     private void Awake() {
         turnManager.OnScoring += SetTotalScore;
         turnManager.OnChangingPlayer += SetTotalScore;
         textComponent = GetComponent<Text>();
     }
 
-    private void SetTotalScore(int scoreToAdd)
+    private void SetTotalScore(TurnScore scoreToAdd, int totalScore)
     {
-        score += scoreToAdd;
-        UpdateUI(score);
+        UpdateUI(totalScore);
     }
 
-    private void SetTotalScore(Stack<int> playerScores, int totalScore)
+    private void SetTotalScore(List<TurnScore> playerScores, int totalScore)
     {
-        score = totalScore;
         UpdateUI(totalScore);
     }
 

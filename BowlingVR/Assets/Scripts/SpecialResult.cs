@@ -17,19 +17,18 @@ public class SpecialResult : MonoBehaviour
         textComponent = GetComponent<Text>();
     }
 
-    private void DisplaySpecialResult(int score)
+    private void DisplaySpecialResult(TurnScore score, int totalScore)
     {
         StartCoroutine(SetSpecialResult(score));
-        previousScore = score;
     }
 
-    private IEnumerator SetSpecialResult(int score)
+    private IEnumerator SetSpecialResult(TurnScore score)
     {
-        if(score == 0) 
+        if((score.T1Gutter() && score.throw2 == -1) || score.T2Gutter()) 
             textComponent.text = "Gutter";
-        else if(score == 10) 
+        else if(score.Strike()) 
             textComponent.text = "Strike";
-        else if(score+previousScore == 10 && previousScore < 10) 
+        else if(score.Spare()) 
             textComponent.text = "Spare";
             
         yield return new WaitForSeconds(3);
