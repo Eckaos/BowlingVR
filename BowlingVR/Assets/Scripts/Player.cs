@@ -21,8 +21,13 @@ public class Player : MonoBehaviour
     public void CalculateTurn(int score)
     {
         totalScore += scoreCalculator.CalculateTurn(score);
-        if(score == 10) scoreCalculator.doubleScoreCount += 2;
-        if(scores.Count > 0 && scores.Peek() < 10 && score+scores.Peek() == 10) scoreCalculator.doubleScoreCount++;
+        if(scores.Count > 0 && scores.Count % 2 == 1 && scores.Peek() < 10 && score+scores.Peek() == 10) 
+            scoreCalculator.doubleScoreCount++;
+        else if(score == 10 && scores.Count > 0 && scores.Count % 2 == 0)
+            scoreCalculator.doubleScoreCount += 2;
         scores.Push(score);
     }
+
+    private bool Strike(int score) => score == 10 && scores.Count > 0 && scores.Count % 2 == 0;
+    private bool Spare(int score) => scores.Count > 0 && scores.Count % 2 == 1 && scores.Peek() < 10 && score+scores.Peek() == 10;
 }

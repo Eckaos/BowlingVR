@@ -46,12 +46,15 @@ public class ScoreTable : MonoBehaviour
 
     private string GetTextToDisplayFromScore(int score)
     {
-        if(score == 10)
-            return "X";
-        if(score == 0)
-            return "-";
-        if(previousScores.Count > 0 && previousScores.Peek() + score == 10)
+        if(Spare(score, previousScores))
             return "/";
+        else if(Strike(score, previousScores))
+            return "X";
+        else if(score == 0)
+            return "-";
+        
         return score.ToString();
     }
+    private bool Strike(int score, Stack<int> scoreList) => score == 10 && scoreList.Count() > 0 && scoreList.Count() % 2 == 0;
+    private bool Spare(int score, Stack<int> scoreList) => scoreList.Count > 0 && scoreList.Count % 2 == 1 && scoreList.Peek() < 10 && score+scoreList.Peek() == 10;
 }
