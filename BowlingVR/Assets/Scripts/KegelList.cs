@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using System.Linq;
 
-public class KegelManager : MonoBehaviour
+public class KegelList : MonoBehaviour
 {
     public List<Kegel> kegels;
     

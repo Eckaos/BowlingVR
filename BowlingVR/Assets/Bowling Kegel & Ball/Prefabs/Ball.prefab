@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 5225463395785293123}
   - component: {fileID: 2026246515904244045}
   - component: {fileID: 4540146782779441374}
+  - component: {fileID: 1027996859519854129}
   m_Layer: 7
   m_Name: Ball
   m_TagString: Untagged
@@ -228,3 +229,16 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &1027996859519854129
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5225463395785141753}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ba2440b4cc935d94083746d86e69460f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spawningPoint: {fileID: 0}

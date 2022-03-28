@@ -4,20 +4,24 @@ using UnityEngine;
 
 public class Gutter : MonoBehaviour
 {
-    [SerializeField]private Transform player;
-    [SerializeField]private TurnManager turnManager;
-    [SerializeField]private Transform ball;
-    public KegelManager kegelManager;
+    [SerializeField] private TurnManager turnManager;
+    [SerializeField] private KegelList kegelList;
+    [SerializeField] private KegelSpawner kegelSpawner;
+
+    private void Awake() {
+        kegelSpawner.OnKegelsSpawned += SetKegelList;
+    }
 
     private void OnTriggerEnter(Collider other)
     {
+        Ball ball = other.GetComponent<Ball>();
+        if(ball == null) return;
+        turnManager.Scoring(kegelList.GetNumberOfFallenKegels());
+        ball.Respawn();
+    }
 
-        if (other.GetComponent<Collider>().name == "Ball")
-        {
-            turnManager.Score(kegelManager.GetNumberOfFallenKegels());
-            ball.position = player.transform.position;
-            ball.GetComponent<Rigidbody>().angularVelocity = Vector3.zero;
-            ball.GetComponent<Rigidbody>().velocity = Vector3.zero;
-        }
+    public void SetKegelList(KegelList list)
+    {
+        kegelList = list;
     }
 }

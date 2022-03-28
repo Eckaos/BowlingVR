@@ -2,26 +2,41 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using System.Linq;
 
 public class ScoreTable : MonoBehaviour
 {
     [SerializeField]private List<Text> scoreTexts;
+    [SerializeField] private TurnManager turnManager;
+    private Stack<int> previousScores;
 
-    public void SetScores(List<int> scores)
+
+    private void Awake() {
+        previousScores = new Stack<int>();
+        turnManager.OnScoring += AddScoreToDisplay;
+    }
+
+    public void AddScoreToDisplay(int score)
     {
-        int index = 0;
-        foreach (var score in scores)
+        Text textComponentToChange = scoreTexts.FirstOrDefault(textComponent => textComponent.text == "");
+        if(textComponentToChange == null) return;
+        if(score == 10)
         {
-            if(score == 10)
-                scoreTexts[++index].text = "X";
-            else if(index%2 == 0 && index >0 && scoreTexts[index-1].text != "-" && score+int.Parse(scoreTexts[index-1].text) == 10)
-                scoreTexts[index].text = "/";
-            else if(score == 0)
-                scoreTexts[index].text = "-";
-            else
-                scoreTexts[index].text = score.ToString();
-            
-            index++;
+            textComponentToChange.text = " ";
+            textComponentToChange = scoreTexts.FirstOrDefault(textComponent => textComponent.text == "");
         }
+        textComponentToChange.text = GetTextToDisplayFromScore(score);
+        previousScores.Push(score);
+    }
+
+    private string GetTextToDisplayFromScore(int score)
+    {
+        if(score == 10)
+            return "X";
+        if(score == 0)
+            return "-";
+        if(previousScores.Count > 0 && previousScores.Peek() + score == 10)
+            return "/";
+        return score.ToString();
     }
 }

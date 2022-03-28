@@ -2,80 +2,55 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
-using UnityEngine.UI;
 
 public class TurnManager : MonoBehaviour
 {
-    private List<Player> players;
+    [SerializeField] private KegelSpawner kegelSpawner;
+
+    private Queue<Player> players;
     private Player player;
-    private int fallenKegels = 0;
     private int throws = 0;
-    private int playerIndex = 0;
-    public Text specialResult;
-    public Text score;
-    public GameObject kegelsPrefab;
+    private int maxThrowPossibleInOneTurn = 2;
 
-    public ScoreTable scoreTable;
+    public delegate void ScoreUpdate(int score);
+    public event ScoreUpdate OnScoring;
 
-    public bool isGutter;
-
-    public Gutter gutter;
-    private void Start() {
-        players = GameObject.FindGameObjectsWithTag("Player").Select(gameObject => gameObject.GetComponent<Player>()).ToList();
-        player = players[playerIndex];
-    }
-    public void Score(int kegels)
+    public delegate void EndGame();
+    public event EndGame OnEndGame;
+    
+    private void Start() 
     {
-        this.fallenKegels += kegels;
+        players = new Queue<Player>(GameObject.FindGameObjectsWithTag("Player").Select(gameObject => gameObject.GetComponent<Player>()));
+        player = players.Dequeue();
+    }
+    public void Scoring(int fallenKegels)
+    {
         throws++;
-        Scoring(kegels);
-        score.text = player.GetTotalScore().ToString();
-        scoreTable.SetScores(player.score);
-        StartCoroutine(DisplaySpecialResult());
-        if(throws >= 2 || fallenKegels == 10) NextTurn();
+        player.CalculateTurn(fallenKegels);
+        if(OnScoring != null) OnScoring.Invoke(fallenKegels);
+        if(player.turn > 9 && (fallenKegels == 10 || (player.scores.Peek() + fallenKegels == 10 && throws > 0)))
+            maxThrowPossibleInOneTurn = 3;
+        if(throws >= maxThrowPossibleInOneTurn || fallenKegels == 10) NextTurn();
     }
 
-    void Scoring(int kegels){
-        player.score.Add(player.scoreCalculator.CalculateTurn(kegels));
-        isGutter = kegels == 0 ? true : false;
-        if(IsStrike())
-            player.scoreCalculator.doubleScoreCount += 2;
-        if(IsSpare())
-            player.scoreCalculator.doubleScoreCount++;
-    }
-
-    void NextTurn(){
+    void NextTurn()
+    {
         throws = 0;
-        fallenKegels = 0;
-        playerIndex++;
-        if(playerIndex >= players.Count) playerIndex = 0;
-        player = players[playerIndex];
+        maxThrowPossibleInOneTurn = 2;
+        player.turn++;
+        players.Enqueue(player);
+        player = players.Dequeue();
+        if(player.turn > 10 && OnEndGame != null)
+        {
+            OnEndGame.Invoke();
+            return;
+        }
         StartCoroutine(RegenerateKegels());
     }
-    bool IsStrike() => fallenKegels == 10 && throws == 1;
-    bool IsSpare() => fallenKegels == 10 && throws == 2;
-    bool IsGutter() => isGutter;
 
-    public IEnumerator DisplaySpecialResult()
+    public IEnumerator RegenerateKegels() 
     {
-        if (IsStrike())
-        {
-            specialResult.text = "Strike";
-        }
-        else if (IsSpare()) {
-            specialResult.text = "Spare";
-    }
-        else if (IsGutter()) {
-            specialResult.text = "Gutter";
-        }
         yield return new WaitForSeconds(2);
-        specialResult.text = "";
-    }
-
-    public IEnumerator RegenerateKegels() {
-        yield return new WaitForSeconds(2);
-        Vector3 kegelsPosition = gutter.kegelManager.transform.position;
-        Destroy(gutter.kegelManager.gameObject);
-        gutter.kegelManager = Instantiate(kegelsPrefab, kegelsPosition, Quaternion.identity).GetComponent<KegelManager>();
+        kegelSpawner.RespawnKegels();
     }
 }
