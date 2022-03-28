@@ -45,6 +45,7 @@ public class TurnManager : MonoBehaviour
         player = players.Dequeue();
         if(player.turn > 10 && OnEndGame != null)
             OnEndGame.Invoke();
+            GameObject.Find("ReplayButtonCanvas").SetActive(true);
         
         StartCoroutine(RegenerateKegels());
         if(OnChangingPlayer != null)
@@ -55,5 +56,11 @@ public class TurnManager : MonoBehaviour
     {
         yield return new WaitForSeconds(2);
         kegelSpawner.RespawnKegels();
+    }
+
+    public void ReloadGame()
+    {
+        Debug.Log("Vous souhaitez rejouer une partie");
+        player.ReloadPlayer();
     }
 }

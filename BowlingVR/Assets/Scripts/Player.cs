@@ -30,4 +30,12 @@ public class Player : MonoBehaviour
 
     private bool Strike(int score) => score == 10 && scores.Count > 0 && scores.Count % 2 == 0;
     private bool Spare(int score) => scores.Count > 0 && scores.Count % 2 == 1 && scores.Peek() < 10 && score+scores.Peek() == 10;
+
+    public void ReloadPlayer()
+    {
+        turn = 0;
+        scores.Clear();
+        totalScore = 0;
+        scoreCalculator.doubleScoreCount = 0;
+    }
 }
