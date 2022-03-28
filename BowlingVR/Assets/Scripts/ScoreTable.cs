@@ -34,8 +34,21 @@ public class ScoreTable : MonoBehaviour
     {
         previousScores.Clear();
         Queue<int> scores = new Queue<int>(playerScores);
+        Debug.Log("Stack");
+        foreach (var item in playerScores)
+        {
+            Debug.Log(item.ToString());    
+        }
+        Debug.Log("Queue");
+        foreach (var item in scores)
+        {
+            Debug.Log(item.ToString());
+        }
+        Debug.Log("Reverse");
         scores.Reverse();
-        
+        foreach(var item in scores)
+            Debug.Log(item.ToString());
+
         foreach (Text t in scoreTexts)
             t.text = "";
 
