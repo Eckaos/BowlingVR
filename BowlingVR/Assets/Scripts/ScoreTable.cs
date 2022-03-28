@@ -33,11 +33,12 @@ public class ScoreTable : MonoBehaviour
     public void ChangePlayer(Stack<int> playerScores, int totalScore)
     {
         previousScores.Clear();
-
+        Queue<int> scores = new Queue<int>(playerScores);
+        
         foreach (Text t in scoreTexts)
             t.text = "";
-            
-        foreach (int score in playerScores)
+
+        foreach (int score in scores)
             AddScoreToDisplay(score);
     }
 
