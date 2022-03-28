@@ -8,6 +8,9 @@ public class Gutter : MonoBehaviour
     [SerializeField] private KegelList kegelList;
     [SerializeField] private KegelSpawner kegelSpawner;
 
+    public delegate void Collision();
+    public event Collision OnCollision;
+
     private void Awake() {
         kegelSpawner.OnKegelsSpawned += SetKegelList;
     }
@@ -16,18 +19,19 @@ public class Gutter : MonoBehaviour
     {
         Ball ball = other.GetComponent<Ball>();
         if(ball == null) return;
-        TriggerScoring(ball);
-    }
-
-    public IEnumerator TriggerScoring(Ball ball)
-    {
-        yield return new WaitForSeconds(2);
-        turnManager.Scoring(kegelList.GetNumberOfFallenKegels());
+        StartCoroutine(TriggerScoring());
         ball.Respawn();
+        kegelSpawner.playSound();
     }
 
     public void SetKegelList(KegelList list)
     {
         kegelList = list;
     }
+
+    private IEnumerator TriggerScoring()
+    {
+        yield return new WaitForSeconds(2);
+        turnManager.Scoring(kegelList.GetNumberOfFallenKegels());
+    }   
 }

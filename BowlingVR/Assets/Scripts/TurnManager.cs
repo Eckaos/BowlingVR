@@ -27,8 +27,7 @@ public class TurnManager : MonoBehaviour
         player = players.Dequeue();
     }
     public void Scoring(int fallenKegels)
-    {
-        kegelSpawner.playSound();
+    {  
         throws++;
         player.CalculateTurn(fallenKegels);
         if(OnScoring != null) OnScoring.Invoke(fallenKegels);
@@ -48,7 +47,7 @@ public class TurnManager : MonoBehaviour
             OnEndGame.Invoke();
         else
             StartCoroutine(RegenerateKegels());
-            
+
         if(OnChangingPlayer != null)
             OnChangingPlayer.Invoke(player.scores, player.GetTotalScore());
     }

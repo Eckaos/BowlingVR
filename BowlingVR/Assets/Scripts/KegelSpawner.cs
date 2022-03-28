@@ -6,8 +6,10 @@ public class KegelSpawner : MonoBehaviour
 {
     [SerializeField] private GameObject kegelListPrefab;
     [SerializeField] private Vector3 position;
+    [SerializeField] private Gutter gutter;
     private KegelList currentKegelList;
     private new AudioSource audio;
+    
 
     public delegate void SpawnKegels(KegelList list);
     public event SpawnKegels OnKegelsSpawned;
@@ -23,6 +25,7 @@ public class KegelSpawner : MonoBehaviour
         currentKegelList = Instantiate(kegelListPrefab, position, Quaternion.identity).GetComponent<KegelList>();
         if(OnKegelsSpawned != null) OnKegelsSpawned.Invoke(currentKegelList);
     }
+
     public void playSound()
     {
         audio.Play();
