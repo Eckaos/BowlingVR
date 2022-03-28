@@ -45,9 +45,8 @@ public class TurnManager : MonoBehaviour
         player = players.Dequeue();
         if(player.turn > 10 && OnEndGame != null)
             OnEndGame.Invoke();
-        else
-            StartCoroutine(RegenerateKegels());
-
+        
+        StartCoroutine(RegenerateKegels());
         if(OnChangingPlayer != null)
             OnChangingPlayer.Invoke(player.scores, player.GetTotalScore());
     }

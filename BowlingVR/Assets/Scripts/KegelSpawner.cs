@@ -25,9 +25,4 @@ public class KegelSpawner : MonoBehaviour
         currentKegelList = Instantiate(kegelListPrefab, position, Quaternion.identity).GetComponent<KegelList>();
         if(OnKegelsSpawned != null) OnKegelsSpawned.Invoke(currentKegelList);
     }
-
-    public void playSound()
-    {
-        audio.Play();
-    }
 }
