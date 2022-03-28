@@ -15,7 +15,7 @@ public class Player : MonoBehaviour
         turn = 0;
     }
     public int GetTotalScore(){
-        return scores.Sum();
+        return totalScore;
     }
 
     public void CalculateTurn(int score)
