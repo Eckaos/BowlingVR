@@ -19,9 +19,9 @@ public class Gutter : MonoBehaviour
     {
         Ball ball = other.GetComponent<Ball>();
         if(ball == null) return;
-        StartCoroutine(TriggerScoring());
         ball.Respawn();
         kegelSpawner.playSound();
+        StartCoroutine(TriggerScoring());
     }
 
     public void SetKegelList(KegelList list)
